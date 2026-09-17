@@ -5,8 +5,6 @@ Instructions for this section will be provided in class and on Blackboard when w
 Put your work for Lab 1 in this folder.
 test
 
-# Lab 1
-
 ## Scripts
 
 ### create-security-group.sh
