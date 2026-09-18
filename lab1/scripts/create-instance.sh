@@ -1,20 +1,18 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -euo pipefail
-
-if [ $# -ne 3 ]; then
-    echo "Usage: $0 <ami-id> <instance-type> <security-group-id>"
-    exit 1
-fi
-
-AMI_ID=$1
-INSTANCE_TYPE=$2
-SG_ID=$3
-
+ 
+AMI_ID=$(aws ssm get-parameters --names /aws/service/ami-amazon-linux-latest/al2023-ami-kernel-default-x86_64 \
+  --query 'Parameters[0].Value' --output text)
+ 
 INSTANCE_ID=$(aws ec2 run-instances \
-    --image-id "$AMI_ID" \
-    --instance-type "$INSTANCE_TYPE" \
-    --security-group-ids "$SG_ID" \
-    --query 'Instances[0].InstanceId' \
-    --output text)
+  --image-id "$AMI_ID" \
+  --instance-type t3.micro \
+  --count 1 \
+  --iam-instance-profile Name=LabInstanceProfile \
+  --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=acs730-week1}]' \
+  --query 'Instances[0].InstanceId' --output text)
+ 
+echo "Instance launched: $INSTANCE_ID"
 
-echo "$INSTANCE_ID"
+
+

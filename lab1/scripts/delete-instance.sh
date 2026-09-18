@@ -1,15 +1,14 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -euo pipefail
-
-if [ $# -ne 1 ]; then
-    echo "Usage: $0 <instance-id>"
-    exit 1
+ 
+IDS=$(aws ec2 describe-instances \
+  --filters "Name=tag:Name,Values=acs730-week1" "Name=instance-state-name,Values=pending,running,stopped" \
+  --query 'Reservations[].Instances[].InstanceId' --output text)
+ 
+if [ -z "$IDS" ]; then
+  echo "Nothing to delete."
+else
+  aws ec2 terminate-instances --instance-ids $IDS --query 'TerminatingInstances[].InstanceId' --output text
+  echo "Terminating: $IDS"
 fi
 
-INSTANCE_ID=$1
-
-aws ec2 terminate-instances \
-    --instance-ids "$INSTANCE_ID" \
-    >/dev/null
-
-echo "Deleted instance: $INSTANCE_ID"
