@@ -1,9 +1,14 @@
 name: Lab 3 Deploy
 
 on:
-  pull_request: { paths: ['lab3/**'] }
-  push: { branches: [main], paths: ['lab3/**'] }
-  concurrency: { group: lab3-terraform }
+  pull_request:
+    paths: ['lab3/**']
+  push:
+    branches: [main]
+    paths: ['lab3/**']
+
+concurrency:
+  group: lab3-terraform
 
 jobs:
   terraform:
@@ -21,8 +26,12 @@ jobs:
 
       - uses: hashicorp/setup-terraform@v3
 
-      - run: terraform init && terraform validate && terraform plan -out=tfplan
+      - name: Terraform plan
+        run: terraform init && terraform validate && terraform plan -out=tfplan
+        working-directory: lab3
 
-      - if: github.event_name == 'push'    # apply only on merge
+      - name: Terraform apply
+        if: github.event_name == 'push'
         run: terraform apply -auto-approve tfplan
+        working-directory: lab3
 
