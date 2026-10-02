@@ -1,0 +1,13 @@
+[![Lab 3 Deploy](https://github.com/AparnaGopi/acs730/actions/workflows/lab3-deploy.yml/badge.svg)](https://github.com/AparnaGopi/acs730/actions/workflows/lab3-deploy.yml)
+
+After PUSH to MAIN
+https://github.com/AparnaGopi/acs730/actions/runs/36960363516/job/110692497979
+
+PULL REQUEST
+
+https://github.com/AparnaGopi/acs730/actions/runs/36960236593/job/110692103628
+
+Lab-CI (lint)
+https://github.com/AparnaGopi/acs730/actions/runs/36960363619/job/110692498185
+https://github.com/AparnaGopi/acs730/actions/runs/36960236596/job/110692103342
+
