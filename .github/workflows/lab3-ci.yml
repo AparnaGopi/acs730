@@ -1,18 +1,21 @@
-name: Lab 3 CI
-
+name: lab3-ci
+ 
 on:
-  push:
-    branches: [main]
-    paths: ['lab3/**', '.github/workflows/lab3-ci.yml']
   pull_request:
-    paths: ['lab3/**', '.github/workflows/lab3-ci.yml']
-
+ 
+permissions:
+  contents: read
+ 
 jobs:
-  lint:
+  static-checks:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Check script syntax
+ 
+      - name: Every shell script must parse
         run: |
-          shopt -s nullglob
-          for f in lab3/scripts/*.sh; do bash -n "$f"; done
+          set -euo pipefail
+          for f in $(find lab3 -name '*.sh'); do
+            echo "checking $f"
+            bash -n "$f"
+          done
