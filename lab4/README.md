@@ -36,5 +36,19 @@ subsequent builds much faster.
 
 
 
+## CI Timings
+
+### Runs Used
+
+- Baseline: https://github.com/AparnaGopi/acs730/actions/runs/39895124482
+- Cache miss: https://github.com/AparnaGopi/acs730/actions/runs/39899556180
+- Cache hit: https://github.com/AparnaGopi/acs730/actions/runs/39899857215
+### Timing Measurements
+
+| Task | Baseline | Cache Miss | Cache Hit | Worth It? |
+|------|----------|------------|-----------|-----------|
+| pip install / test job | 9s | 11s | 10s | No |
+| docker build | 37s | 30s | 23s | Yes |
+| whole workflow | 61s | 56s | 47s | Yes |
 
 
