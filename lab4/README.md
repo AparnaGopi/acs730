@@ -52,3 +52,8 @@ subsequent builds much faster.
 | whole workflow | 61s | 56s | 47s | Yes |
 
 
+## Why These Reusable Components Fit
+
+**Composite action (python-deps):** The Python dependency setup is a small sequence of steps (setup Python, restore cache, install dependencies) that must run inside the same job and runner as the tests. A composite action is a good fit because it packages those repeated steps into a reusable unit without creating a separate workflow.
+
+**Reusable workflow (image build/publish):** The container build and publish process is a complete job with its own permissions, artifacts, and execution environment. A reusable workflow is a good fit because it encapsulates an entire CI/CD process that can be called from other workflows without duplicating job definitions.
