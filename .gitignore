@@ -5,3 +5,6 @@
 .env
 credentials
 lab3/.terraform.lock.hcl
+__pycache__/
+*.pyc
+.pytest_cache/
