@@ -113,3 +113,19 @@ jobs:
           TAG="sha-${GITHUB_SHA::12}"
           docker build -t "$IMAGE:$TAG" lab4/
           docker push "$IMAGE:$TAG"
+  image:
+    needs: test
+    uses: ./.github/workflows/docker-build.yml
+    with:
+      context: lab4
+      image-name: acs730-lab4
+      push: ${{ github.ref == 'refs/heads/main' }}
+    permissions:
+      contents: read
+      packages: write
+ 
+  report:
+    needs: image
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "built ${{ needs.image.outputs.image-ref }}"
