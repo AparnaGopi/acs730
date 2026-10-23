@@ -1,0 +1,23 @@
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile*
+docker-compose.yml
+.dockerignore
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+venv/
+.venv/
+.env
+
+#evidence
+evidence/
+*.png
+
+# Documentation
+*.md
