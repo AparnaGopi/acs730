@@ -8,9 +8,10 @@ lab3/.terraform.lock.hcl
 __pycache__/
 *.pyc
 .pytest_cache/
-.terraform/
 *.tfstate
 *.tfstate.*
-tfplan
 crash.log
-
+.terraform/
+terraform-provider-aws
+terraform.tfstate
+tfplan
