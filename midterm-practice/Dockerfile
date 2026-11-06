@@ -9,6 +9,10 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 RUN useradd --create-home --uid 10001 appuser
 
 WORKDIR /app
+<<<<<<< HEAD
+=======
+COPY requirements.txt ./
+>>>>>>> 2ec464a (Midterm practical fixes)
 
 RUN pip install --no-cache-dir -r requirements.txt
 
