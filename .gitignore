@@ -1,19 +1,18 @@
-# Secrets / keys
-*.pem
-.env
-credentials
-
-# Terraform
-.terraform/
-*.tfstate
-*.tfstate.*
-tfplan
-crash.log
-terraform-provider-aws
-lab3/.terraform.lock.hcl
-midterm-practice/.terraform.lock.hcl
 
 # Python
-__pycache__/
+# Secrets / keys
+# Terraform
+*.pem
 *.pyc
+*.tfstate
+*.tfstate.*
+.env
 .pytest_cache/
+.terraform/
+__pycache__/
+crash.log
+credentials
+lab3/.terraform.lock.hcl
+midterm-practice/.terraform.lock.hcl
+terraform-provider-aws
+tfplan
