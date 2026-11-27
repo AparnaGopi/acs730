@@ -15,6 +15,7 @@ module "web" {
   environment                = "prod"
   owner                      = "aparna"
   instance_type              = "t3.micro"
+  cpu_alarm_threshold        = 75
   db_password_parameter_name = "/acs730/assignment1/prod/db_password"
   vpc_cidr                   = "10.30.0.0/16"
 
