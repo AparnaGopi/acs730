@@ -1,0 +1,1292 @@
+validate	Set up job	﻿2026-11-27T04:39:46.3453700Z Current runner version: '2.338.2'
+validate	Set up job	2026-11-27T04:39:46.3472355Z ##[group]Runner Image Provisioner
+validate	Set up job	2026-11-27T04:39:46.3473021Z Hosted Compute Agent
+validate	Set up job	2026-11-27T04:39:46.3473536Z Version: 20261111.635
+validate	Set up job	2026-11-27T04:39:46.3473985Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+validate	Set up job	2026-11-27T04:39:46.3474527Z Build Date: 2026-11-11T01:49:01Z
+validate	Set up job	2026-11-27T04:39:46.3475232Z Worker ID: {ead3d308-3650-4e2c-9a6f-b82a8c2a0e6b}
+validate	Set up job	2026-11-27T04:39:46.3475768Z Region: us-west-2
+validate	Set up job	2026-11-27T04:39:46.3476176Z Cloud: AWS
+validate	Set up job	2026-11-27T04:39:46.3476551Z ##[endgroup]
+validate	Set up job	2026-11-27T04:39:46.3477480Z ##[group]Operating System
+validate	Set up job	2026-11-27T04:39:46.3477944Z Ubuntu
+validate	Set up job	2026-11-27T04:39:46.3478307Z 26.04.1
+validate	Set up job	2026-11-27T04:39:46.3478705Z LTS
+validate	Set up job	2026-11-27T04:39:46.3479070Z ##[endgroup]
+validate	Set up job	2026-11-27T04:39:46.3479452Z ##[group]Runner Image
+validate	Set up job	2026-11-27T04:39:46.3479893Z Image: ubuntu-26.04
+validate	Set up job	2026-11-27T04:39:46.3480289Z Version: 20261116.88.1
+validate	Set up job	2026-11-27T04:39:46.3481096Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261116.88/images/ubuntu/Ubuntu2604-Readme.md
+validate	Set up job	2026-11-27T04:39:46.3482338Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261116.88
+validate	Set up job	2026-11-27T04:39:46.3483035Z ##[endgroup]
+validate	Set up job	2026-11-27T04:39:46.3483813Z ##[group]GITHUB_TOKEN Permissions
+validate	Set up job	2026-11-27T04:39:46.3485571Z Contents: read
+validate	Set up job	2026-11-27T04:39:46.3486012Z Metadata: read
+validate	Set up job	2026-11-27T04:39:46.3486675Z ##[endgroup]
+validate	Set up job	2026-11-27T04:39:46.3488368Z Secret source: Actions
+validate	Set up job	2026-11-27T04:39:46.3489030Z Cache mode: write
+validate	Set up job	2026-11-27T04:39:46.3489718Z Prepare workflow directory
+validate	Set up job	2026-11-27T04:39:46.3752228Z Prepare all required actions
+validate	Set up job	2026-11-27T04:39:46.3788077Z Getting action download info
+validate	Set up job	2026-11-27T04:39:46.7487979Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+validate	Set up job	2026-11-27T04:39:48.0537531Z Download action repository 'hashicorp/setup-terraform@v3' (SHA:b9cd54a3c349d3f38e8881555d616ced269862dd)
+validate	Set up job	2026-11-27T04:39:48.5592298Z Complete job name: validate
+validate	Run actions/checkout@v4	﻿2026-11-27T04:39:48.6302507Z ##[group]Run actions/checkout@v4
+validate	Run actions/checkout@v4	2026-11-27T04:39:48.6303777Z with:
+validate	Run actions/checkout@v4	2026-11-27T04:39:48.6304634Z   repository: AparnaGopi/acs730
+validate	Run actions/checkout@v4	2026-11-27T04:39:48.6312015Z   token: ***
+validate	Run actions/checkout@v4	2026-11-27T04:39:48.6312800Z   ssh-strict: true
+validate	Run actions/checkout@v4	2026-11-27T04:39:48.6313554Z   ssh-user: git
+validate	Run actions/checkout@v4	2026-11-27T04:39:48.6314298Z   persist-credentials: true
+validate	Run actions/checkout@v4	2026-11-27T04:39:48.6315288Z   clean: true
+validate	Run actions/checkout@v4	2026-11-27T04:39:48.6316099Z   sparse-checkout-cone-mode: true
+validate	Run actions/checkout@v4	2026-11-27T04:39:48.6317000Z   fetch-depth: 1
+validate	Run actions/checkout@v4	2026-11-27T04:39:48.6317761Z   fetch-tags: false
+validate	Run actions/checkout@v4	2026-11-27T04:39:48.6318530Z   show-progress: true
+validate	Run actions/checkout@v4	2026-11-27T04:39:48.6319349Z   lfs: false
+validate	Run actions/checkout@v4	2026-11-27T04:39:48.6320077Z   submodules: false
+validate	Run actions/checkout@v4	2026-11-27T04:39:48.6320844Z   set-safe-directory: true
+validate	Run actions/checkout@v4	2026-11-27T04:39:48.6321777Z   allow-unsafe-pr-checkout: false
+validate	Run actions/checkout@v4	2026-11-27T04:39:48.6322881Z env:
+validate	Run actions/checkout@v4	2026-11-27T04:39:48.6323603Z   TF_IN_AUTOMATION: true
+validate	Run actions/checkout@v4	2026-11-27T04:39:48.6324436Z ##[endgroup]
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.3308203Z Syncing repository: AparnaGopi/acs730
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.3309518Z ##[group]Getting Git version info
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.3310163Z Working directory is '/home/runner/work/acs730/acs730'
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.3310803Z [command]/usr/bin/git version
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.3322417Z git version 2.56.1
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.3335796Z ##[endgroup]
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.3345433Z Temporarily overriding HOME='/home/runner/work/_temp/7ab26268-b87c-4325-a21b-e4fa6f0b6890' before making global git config changes
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.3346353Z Adding repository directory to the temporary git global config as a safe directory
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.3349531Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/acs730/acs730
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.3828286Z Deleting the contents of '/home/runner/work/acs730/acs730'
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.3829268Z ##[group]Initializing the repository
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.3832988Z [command]/usr/bin/git init /home/runner/work/acs730/acs730
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.4346495Z hint: Using 'master' as the name for the initial branch. This default branch name
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.4347356Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.4348199Z hint: to use in all of your new repositories, which will suppress this warning,
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.4348640Z hint: call:
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.4348914Z hint:
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.4349279Z hint: 	git config --global init.defaultBranch <name>
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.4349611Z hint:
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.4349959Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.4350469Z hint: 'development'. The just-created branch can be renamed via this command:
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.4350861Z hint:
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.4351118Z hint: 	git branch -m <name>
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.4351392Z hint:
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.4351754Z hint: Disable this message with "git config set advice.defaultBranchName false"
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.4381735Z Initialized empty Git repository in /home/runner/work/acs730/acs730/.git/
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.4389433Z [command]/usr/bin/git remote add origin https://github.com/AparnaGopi/acs730
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.4460286Z ##[endgroup]
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.4460893Z ##[group]Disabling automatic garbage collection
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.4463457Z [command]/usr/bin/git config --local gc.auto 0
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.4483796Z ##[endgroup]
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.4484524Z ##[group]Setting up auth
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.4488588Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.4509875Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.7206627Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.7230456Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.7407482Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.7428701Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.7599052Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.7622806Z ##[endgroup]
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.7623229Z ##[group]Fetching the repository
+validate	Run actions/checkout@v4	2026-11-27T04:39:52.7628821Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +e4253b7d094eb977e4ddbe1ccde2b2244c243f80:refs/remotes/origin/main
+validate	Run actions/checkout@v4	2026-11-27T04:39:53.6735927Z From https://github.com/AparnaGopi/acs730
+validate	Run actions/checkout@v4	2026-11-27T04:39:53.6736577Z  * [new ref]         e4253b7d094eb977e4ddbe1ccde2b2244c243f80 -> origin/main
+validate	Run actions/checkout@v4	2026-11-27T04:39:53.6744671Z ##[endgroup]
+validate	Run actions/checkout@v4	2026-11-27T04:39:53.6745433Z ##[group]Determining the checkout info
+validate	Run actions/checkout@v4	2026-11-27T04:39:53.6746016Z ##[endgroup]
+validate	Run actions/checkout@v4	2026-11-27T04:39:53.6746417Z [command]/usr/bin/git sparse-checkout disable
+validate	Run actions/checkout@v4	2026-11-27T04:39:53.6826062Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+validate	Run actions/checkout@v4	2026-11-27T04:39:53.6837025Z ##[group]Checking out the ref
+validate	Run actions/checkout@v4	2026-11-27T04:39:53.6837646Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+validate	Run actions/checkout@v4	2026-11-27T04:39:53.7139750Z Switched to a new branch 'main'
+validate	Run actions/checkout@v4	2026-11-27T04:39:53.7149095Z branch 'main' set up to track 'origin/main'.
+validate	Run actions/checkout@v4	2026-11-27T04:39:53.7154381Z ##[endgroup]
+validate	Run actions/checkout@v4	2026-11-27T04:39:53.7200452Z [command]/usr/bin/git log -1 --format=%H
+validate	Run actions/checkout@v4	2026-11-27T04:39:53.7216536Z e4253b7d094eb977e4ddbe1ccde2b2244c243f80
+validate	Run hashicorp/setup-terraform@v3	﻿2026-11-27T04:39:53.7388503Z ##[group]Run hashicorp/setup-terraform@v3
+validate	Run hashicorp/setup-terraform@v3	2026-11-27T04:39:53.7388804Z with:
+validate	Run hashicorp/setup-terraform@v3	2026-11-27T04:39:53.7389042Z   terraform_version: 1.10.3
+validate	Run hashicorp/setup-terraform@v3	2026-11-27T04:39:53.7389299Z   terraform_wrapper: false
+validate	Run hashicorp/setup-terraform@v3	2026-11-27T04:39:53.7389586Z   cli_config_credentials_hostname: app.terraform.io
+validate	Run hashicorp/setup-terraform@v3	2026-11-27T04:39:53.7389860Z env:
+validate	Run hashicorp/setup-terraform@v3	2026-11-27T04:39:53.7390071Z   TF_IN_AUTOMATION: true
+validate	Run hashicorp/setup-terraform@v3	2026-11-27T04:39:53.7390448Z ##[endgroup]
+validate	Run hashicorp/setup-terraform@v3	2026-11-27T04:39:53.9337521Z (node:2440) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+validate	Run hashicorp/setup-terraform@v3	2026-11-27T04:39:53.9338437Z (Use `node --trace-deprecation ...` to show where the warning was created)
+validate	Run hashicorp/setup-terraform@v3	2026-11-27T04:39:54.2350792Z [command]/usr/bin/unzip -o -q /home/runner/work/_temp/0edf62d8-5b57-444e-8720-768601df4f17
+validate	Run terraform fmt -check -recursive assignment1/terraform	﻿2026-11-27T04:39:54.7723138Z ##[group]Run terraform fmt -check -recursive assignment1/terraform
+validate	Run terraform fmt -check -recursive assignment1/terraform	2026-11-27T04:39:54.7723701Z ^[[36;1mterraform fmt -check -recursive assignment1/terraform^[[0m
+validate	Run terraform fmt -check -recursive assignment1/terraform	2026-11-27T04:39:54.7748390Z shell: /usr/bin/bash -e {0}
+validate	Run terraform fmt -check -recursive assignment1/terraform	2026-11-27T04:39:54.7748686Z env:
+validate	Run terraform fmt -check -recursive assignment1/terraform	2026-11-27T04:39:54.7748943Z   TF_IN_AUTOMATION: true
+validate	Run terraform fmt -check -recursive assignment1/terraform	2026-11-27T04:39:54.7749188Z ##[endgroup]
+validate	Run for env in dev staging prod; do	﻿2026-11-27T04:39:54.9137366Z ##[group]Run for env in dev staging prod; do
+validate	Run for env in dev staging prod; do	2026-11-27T04:39:54.9137738Z ^[[36;1mfor env in dev staging prod; do^[[0m
+validate	Run for env in dev staging prod; do	2026-11-27T04:39:54.9138160Z ^[[36;1m  terraform -chdir=assignment1/terraform/$env init -backend=false -input=false^[[0m
+validate	Run for env in dev staging prod; do	2026-11-27T04:39:54.9138585Z ^[[36;1m  terraform -chdir=assignment1/terraform/$env validate^[[0m
+validate	Run for env in dev staging prod; do	2026-11-27T04:39:54.9138895Z ^[[36;1mdone^[[0m
+validate	Run for env in dev staging prod; do	2026-11-27T04:39:54.9157761Z shell: /usr/bin/bash -e {0}
+validate	Run for env in dev staging prod; do	2026-11-27T04:39:54.9158070Z env:
+validate	Run for env in dev staging prod; do	2026-11-27T04:39:54.9158292Z   TF_IN_AUTOMATION: true
+validate	Run for env in dev staging prod; do	2026-11-27T04:39:54.9158519Z ##[endgroup]
+validate	Run for env in dev staging prod; do	2026-11-27T04:39:54.9387211Z ^[[0m^[[1mInitializing modules...^[[0m
+validate	Run for env in dev staging prod; do	2026-11-27T04:39:54.9416784Z - web in ../modules/web
+validate	Run for env in dev staging prod; do	2026-11-27T04:39:54.9418268Z ^[[0m^[[1mInitializing provider plugins...^[[0m
+validate	Run for env in dev staging prod; do	2026-11-27T04:39:54.9418749Z - Reusing previous version of hashicorp/aws from the dependency lock file
+validate	Run for env in dev staging prod; do	2026-11-27T04:39:55.1140220Z - Installing hashicorp/aws v5.100.0...
+validate	Run for env in dev staging prod; do	2026-11-27T04:40:00.4764211Z - Installed hashicorp/aws v5.100.0 (signed by HashiCorp)
+validate	Run for env in dev staging prod; do	2026-11-27T04:40:00.4764741Z 
+validate	Run for env in dev staging prod; do	2026-11-27T04:40:00.4765827Z ^[[0m^[[1m^[[32mTerraform has been successfully initialized!^[[0m^[[32m^[[0m
+validate	Run for env in dev staging prod; do	2026-11-27T04:40:02.0177171Z ^[[32m^[[1mSuccess!^[[0m The configuration is valid.
+validate	Run for env in dev staging prod; do	2026-11-27T04:40:02.0178073Z ^[[0m
+validate	Run for env in dev staging prod; do	2026-11-27T04:40:02.0396872Z ^[[0m^[[1mInitializing modules...^[[0m
+validate	Run for env in dev staging prod; do	2026-11-27T04:40:02.0411082Z - web in ../modules/web
+validate	Run for env in dev staging prod; do	2026-11-27T04:40:02.0432107Z ^[[0m^[[1mInitializing provider plugins...^[[0m
+validate	Run for env in dev staging prod; do	2026-11-27T04:40:02.0433863Z - Reusing previous version of hashicorp/aws from the dependency lock file
+validate	Run for env in dev staging prod; do	2026-11-27T04:40:02.2204990Z - Installing hashicorp/aws v5.100.0...
+validate	Run for env in dev staging prod; do	2026-11-27T04:40:08.7404594Z - Installed hashicorp/aws v5.100.0 (signed by HashiCorp)
+validate	Run for env in dev staging prod; do	2026-11-27T04:40:08.7404934Z 
+validate	Run for env in dev staging prod; do	2026-11-27T04:40:08.7405560Z ^[[0m^[[1m^[[32mTerraform has been successfully initialized!^[[0m^[[32m^[[0m
+validate	Run for env in dev staging prod; do	2026-11-27T04:40:10.2805180Z ^[[32m^[[1mSuccess!^[[0m The configuration is valid.
+validate	Run for env in dev staging prod; do	2026-11-27T04:40:10.2805837Z ^[[0m
+validate	Run for env in dev staging prod; do	2026-11-27T04:40:10.3028729Z ^[[0m^[[1mInitializing modules...^[[0m
+validate	Run for env in dev staging prod; do	2026-11-27T04:40:10.3041471Z - web in ../modules/web
+validate	Run for env in dev staging prod; do	2026-11-27T04:40:10.3047976Z ^[[0m^[[1mInitializing provider plugins...^[[0m
+validate	Run for env in dev staging prod; do	2026-11-27T04:40:10.3048464Z - Reusing previous version of hashicorp/aws from the dependency lock file
+validate	Run for env in dev staging prod; do	2026-11-27T04:40:10.4878792Z - Installing hashicorp/aws v5.100.0...
+validate	Run for env in dev staging prod; do	2026-11-27T04:40:16.0628886Z - Installed hashicorp/aws v5.100.0 (signed by HashiCorp)
+validate	Run for env in dev staging prod; do	2026-11-27T04:40:16.0629483Z 
+validate	Run for env in dev staging prod; do	2026-11-27T04:40:16.0629955Z ^[[0m^[[1m^[[32mTerraform has been successfully initialized!^[[0m^[[32m^[[0m
+validate	Run for env in dev staging prod; do	2026-11-27T04:40:17.5710224Z ^[[32m^[[1mSuccess!^[[0m The configuration is valid.
+validate	Run for env in dev staging prod; do	2026-11-27T04:40:17.5710809Z ^[[0m
+validate	Post Run actions/checkout@v4	﻿2026-11-27T04:40:17.5855678Z Post job cleanup.
+validate	Post Run actions/checkout@v4	2026-11-27T04:40:17.6476578Z [command]/usr/bin/git version
+validate	Post Run actions/checkout@v4	2026-11-27T04:40:17.6505627Z git version 2.56.1
+validate	Post Run actions/checkout@v4	2026-11-27T04:40:17.6529382Z Temporarily overriding HOME='/home/runner/work/_temp/aab7d310-96e1-440b-8f8e-72d39612437d' before making global git config changes
+validate	Post Run actions/checkout@v4	2026-11-27T04:40:17.6530526Z Adding repository directory to the temporary git global config as a safe directory
+validate	Post Run actions/checkout@v4	2026-11-27T04:40:17.6533188Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/acs730/acs730
+validate	Post Run actions/checkout@v4	2026-11-27T04:40:17.6560431Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+validate	Post Run actions/checkout@v4	2026-11-27T04:40:17.6583807Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+validate	Post Run actions/checkout@v4	2026-11-27T04:40:17.6793428Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+validate	Post Run actions/checkout@v4	2026-11-27T04:40:17.6810911Z http.https://github.com/.extraheader
+validate	Post Run actions/checkout@v4	2026-11-27T04:40:17.6813619Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+validate	Post Run actions/checkout@v4	2026-11-27T04:40:17.6834959Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+validate	Post Run actions/checkout@v4	2026-11-27T04:40:17.7062538Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+validate	Post Run actions/checkout@v4	2026-11-27T04:40:17.7083309Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+validate	Complete job	﻿2026-11-27T04:40:17.7354103Z Cleaning up orphan processes
+validate	Complete job	2026-11-27T04:40:17.7604120Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, hashicorp/setup-terraform@v3. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+apply-staging	Set up job	﻿2026-11-27T04:40:23.5365465Z Current runner version: '2.338.2'
+apply-staging	Set up job	2026-11-27T04:40:23.5389268Z ##[group]Runner Image Provisioner
+apply-staging	Set up job	2026-11-27T04:40:23.5390222Z Hosted Compute Agent
+apply-staging	Set up job	2026-11-27T04:40:23.5390768Z Version: 20261111.635
+apply-staging	Set up job	2026-11-27T04:40:23.5391374Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+apply-staging	Set up job	2026-11-27T04:40:23.5392079Z Build Date: 2026-11-11T01:49:01Z
+apply-staging	Set up job	2026-11-27T04:40:23.5392752Z Worker ID: {57b73f22-dd0d-461f-99d5-a45c7f1332a4}
+apply-staging	Set up job	2026-11-27T04:40:23.5393416Z Region: westus3
+apply-staging	Set up job	2026-11-27T04:40:23.5393939Z Cloud: Azure
+apply-staging	Set up job	2026-11-27T04:40:23.5394889Z ##[endgroup]
+apply-staging	Set up job	2026-11-27T04:40:23.5396636Z ##[group]Operating System
+apply-staging	Set up job	2026-11-27T04:40:23.5397571Z Ubuntu
+apply-staging	Set up job	2026-11-27T04:40:23.5398117Z 26.04.1
+apply-staging	Set up job	2026-11-27T04:40:23.5398584Z LTS
+apply-staging	Set up job	2026-11-27T04:40:23.5399090Z ##[endgroup]
+apply-staging	Set up job	2026-11-27T04:40:23.5399648Z ##[group]Runner Image
+apply-staging	Set up job	2026-11-27T04:40:23.5400215Z Image: ubuntu-26.04
+apply-staging	Set up job	2026-11-27T04:40:23.5400751Z Version: 20261116.202.1
+apply-staging	Set up job	2026-11-27T04:40:23.5401772Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261116.202/images/ubuntu/Ubuntu2604-Readme.md
+apply-staging	Set up job	2026-11-27T04:40:23.5403345Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261116.202
+apply-staging	Set up job	2026-11-27T04:40:23.5404326Z ##[endgroup]
+apply-staging	Set up job	2026-11-27T04:40:23.5405356Z ##[group]GITHUB_TOKEN Permissions
+apply-staging	Set up job	2026-11-27T04:40:23.5408026Z Contents: read
+apply-staging	Set up job	2026-11-27T04:40:23.5408864Z Metadata: read
+apply-staging	Set up job	2026-11-27T04:40:23.5409421Z ##[endgroup]
+apply-staging	Set up job	2026-11-27T04:40:23.5411576Z Secret source: Actions
+apply-staging	Set up job	2026-11-27T04:40:23.5412533Z Cache mode: write
+apply-staging	Set up job	2026-11-27T04:40:23.5413434Z Prepare workflow directory
+apply-staging	Set up job	2026-11-27T04:40:23.5859545Z Prepare all required actions
+apply-staging	Set up job	2026-11-27T04:40:23.5907765Z Getting action download info
+apply-staging	Set up job	2026-11-27T04:40:23.9240014Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+apply-staging	Set up job	2026-11-27T04:40:24.0570278Z Download action repository 'aws-actions/configure-aws-credentials@v4' (SHA:7474bc4690e29a8392af63c5b98e7449536d5c3a)
+apply-staging	Set up job	2026-11-27T04:40:24.6213463Z Download action repository 'hashicorp/setup-terraform@v3' (SHA:b9cd54a3c349d3f38e8881555d616ced269862dd)
+apply-staging	Set up job	2026-11-27T04:40:25.2952032Z Complete job name: apply-staging
+apply-staging	Run actions/checkout@v4	﻿2026-11-27T04:40:25.4014964Z ##[group]Run actions/checkout@v4
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.4016424Z with:
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.4017442Z   repository: AparnaGopi/acs730
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.4024919Z   token: ***
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.4025767Z   ssh-strict: true
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.4026626Z   ssh-user: git
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.4027599Z   persist-credentials: true
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.4028562Z   clean: true
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.4029440Z   sparse-checkout-cone-mode: true
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.4030466Z   fetch-depth: 1
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.4031315Z   fetch-tags: false
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.4032198Z   show-progress: true
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.4033086Z   lfs: false
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.4033914Z   submodules: false
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.4034830Z   set-safe-directory: true
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.4035847Z   allow-unsafe-pr-checkout: false
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.4037222Z env:
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.4038046Z   TF_IN_AUTOMATION: true
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.4039014Z ##[endgroup]
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9641514Z Syncing repository: AparnaGopi/acs730
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9644242Z ##[group]Getting Git version info
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9645665Z Working directory is '/home/runner/work/acs730/acs730'
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9648118Z [command]/usr/bin/git version
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9649760Z git version 2.56.1
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9660576Z ##[endgroup]
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9676534Z Temporarily overriding HOME='/home/runner/work/_temp/d14be6ad-52a6-4f3a-9e5e-a21749c14acb' before making global git config changes
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9679507Z Adding repository directory to the temporary git global config as a safe directory
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9684184Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/acs730/acs730
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9751771Z Deleting the contents of '/home/runner/work/acs730/acs730'
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9754999Z ##[group]Initializing the repository
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9761251Z [command]/usr/bin/git init /home/runner/work/acs730/acs730
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9846953Z hint: Using 'master' as the name for the initial branch. This default branch name
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9849128Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9850937Z hint: to use in all of your new repositories, which will suppress this warning,
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9852392Z hint: call:
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9853197Z hint:
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9854184Z hint: 	git config --global init.defaultBranch <name>
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9855369Z hint:
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9856481Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9858592Z hint: 'development'. The just-created branch can be renamed via this command:
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9860517Z hint:
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9861756Z hint: 	git branch -m <name>
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9863108Z hint:
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9864991Z hint: Disable this message with "git config set advice.defaultBranchName false"
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9866910Z Initialized empty Git repository in /home/runner/work/acs730/acs730/.git/
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9872392Z [command]/usr/bin/git remote add origin https://github.com/AparnaGopi/acs730
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9923803Z ##[endgroup]
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9926004Z ##[group]Disabling automatic garbage collection
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9927823Z [command]/usr/bin/git config --local gc.auto 0
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9958749Z ##[endgroup]
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9960198Z ##[group]Setting up auth
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9966851Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:25.9999378Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:26.0411270Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:26.0446162Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:26.0683588Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:26.0715101Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:26.0937269Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:26.0971167Z ##[endgroup]
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:26.0972818Z ##[group]Fetching the repository
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:26.0981187Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +e4253b7d094eb977e4ddbe1ccde2b2244c243f80:refs/remotes/origin/main
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:26.8755233Z From https://github.com/AparnaGopi/acs730
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:26.8757439Z  * [new ref]         e4253b7d094eb977e4ddbe1ccde2b2244c243f80 -> origin/main
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:26.8760256Z ##[endgroup]
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:26.8761197Z ##[group]Determining the checkout info
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:26.8762231Z ##[endgroup]
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:26.8768346Z [command]/usr/bin/git sparse-checkout disable
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:26.8817493Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:26.8843271Z ##[group]Checking out the ref
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:26.8847475Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:26.9143859Z Switched to a new branch 'main'
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:26.9148318Z branch 'main' set up to track 'origin/main'.
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:26.9154591Z ##[endgroup]
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:26.9197503Z [command]/usr/bin/git log -1 --format=%H
+apply-staging	Run actions/checkout@v4	2026-11-27T04:40:26.9217536Z e4253b7d094eb977e4ddbe1ccde2b2244c243f80
+apply-staging	Run aws-actions/configure-aws-credentials@v4	﻿2026-11-27T04:40:26.9488540Z ##[group]Run aws-actions/configure-aws-credentials@v4
+apply-staging	Run aws-actions/configure-aws-credentials@v4	2026-11-27T04:40:26.9489064Z with:
+apply-staging	Run aws-actions/configure-aws-credentials@v4	2026-11-27T04:40:26.9489590Z   aws-access-key-id: ***
+apply-staging	Run aws-actions/configure-aws-credentials@v4	2026-11-27T04:40:26.9490073Z   aws-secret-access-key: ***
+apply-staging	Run aws-actions/configure-aws-credentials@v4	2026-11-27T04:40:26.9494013Z   aws-session-token: ***
+apply-staging	Run aws-actions/configure-aws-credentials@v4	2026-11-27T04:40:26.9494364Z   aws-region: us-east-1
+apply-staging	Run aws-actions/configure-aws-credentials@v4	2026-11-27T04:40:26.9494711Z   audience: sts.amazonaws.com
+apply-staging	Run aws-actions/configure-aws-credentials@v4	2026-11-27T04:40:26.9495085Z   output-env-credentials: true
+apply-staging	Run aws-actions/configure-aws-credentials@v4	2026-11-27T04:40:26.9495432Z env:
+apply-staging	Run aws-actions/configure-aws-credentials@v4	2026-11-27T04:40:26.9495725Z   TF_IN_AUTOMATION: true
+apply-staging	Run aws-actions/configure-aws-credentials@v4	2026-11-27T04:40:26.9496049Z ##[endgroup]
+apply-staging	Run aws-actions/configure-aws-credentials@v4	2026-11-27T04:40:27.3124068Z Proceeding with IAM user credentials
+apply-staging	Run hashicorp/setup-terraform@v3	﻿2026-11-27T04:40:27.3234048Z ##[group]Run hashicorp/setup-terraform@v3
+apply-staging	Run hashicorp/setup-terraform@v3	2026-11-27T04:40:27.3234359Z with:
+apply-staging	Run hashicorp/setup-terraform@v3	2026-11-27T04:40:27.3234566Z   terraform_version: 1.10.3
+apply-staging	Run hashicorp/setup-terraform@v3	2026-11-27T04:40:27.3234828Z   terraform_wrapper: false
+apply-staging	Run hashicorp/setup-terraform@v3	2026-11-27T04:40:27.3235136Z   cli_config_credentials_hostname: app.terraform.io
+apply-staging	Run hashicorp/setup-terraform@v3	2026-11-27T04:40:27.3235529Z env:
+apply-staging	Run hashicorp/setup-terraform@v3	2026-11-27T04:40:27.3235726Z   TF_IN_AUTOMATION: true
+apply-staging	Run hashicorp/setup-terraform@v3	2026-11-27T04:40:27.3235970Z   AWS_DEFAULT_REGION: us-east-1
+apply-staging	Run hashicorp/setup-terraform@v3	2026-11-27T04:40:27.3236212Z   AWS_REGION: us-east-1
+apply-staging	Run hashicorp/setup-terraform@v3	2026-11-27T04:40:27.3236556Z   AWS_ACCESS_KEY_ID: ***
+apply-staging	Run hashicorp/setup-terraform@v3	2026-11-27T04:40:27.3236890Z   AWS_SECRET_ACCESS_KEY: ***
+apply-staging	Run hashicorp/setup-terraform@v3	2026-11-27T04:40:27.3240713Z   AWS_SESSION_TOKEN: ***
+apply-staging	Run hashicorp/setup-terraform@v3	2026-11-27T04:40:27.3240949Z ##[endgroup]
+apply-staging	Run hashicorp/setup-terraform@v3	2026-11-27T04:40:27.4572134Z (node:2412) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+apply-staging	Run hashicorp/setup-terraform@v3	2026-11-27T04:40:27.4573190Z (Use `node --trace-deprecation ...` to show where the warning was created)
+apply-staging	Run hashicorp/setup-terraform@v3	2026-11-27T04:40:27.7766829Z [command]/usr/bin/unzip -o -q /home/runner/work/_temp/687d6f67-21ac-4bbc-8cc8-9ae6517c6e75
+apply-staging	Run terraform init -input=false	﻿2026-11-27T04:40:28.3591089Z ##[group]Run terraform init -input=false
+apply-staging	Run terraform init -input=false	2026-11-27T04:40:28.3591476Z ^[[36;1mterraform init -input=false^[[0m
+apply-staging	Run terraform init -input=false	2026-11-27T04:40:28.3617750Z shell: /usr/bin/bash -e {0}
+apply-staging	Run terraform init -input=false	2026-11-27T04:40:28.3618035Z env:
+apply-staging	Run terraform init -input=false	2026-11-27T04:40:28.3618240Z   TF_IN_AUTOMATION: true
+apply-staging	Run terraform init -input=false	2026-11-27T04:40:28.3618494Z   AWS_DEFAULT_REGION: us-east-1
+apply-staging	Run terraform init -input=false	2026-11-27T04:40:28.3618750Z   AWS_REGION: us-east-1
+apply-staging	Run terraform init -input=false	2026-11-27T04:40:28.3619104Z   AWS_ACCESS_KEY_ID: ***
+apply-staging	Run terraform init -input=false	2026-11-27T04:40:28.3619462Z   AWS_SECRET_ACCESS_KEY: ***
+apply-staging	Run terraform init -input=false	2026-11-27T04:40:28.3622779Z   AWS_SESSION_TOKEN: ***
+apply-staging	Run terraform init -input=false	2026-11-27T04:40:28.3623005Z ##[endgroup]
+apply-staging	Run terraform init -input=false	2026-11-27T04:40:28.4033329Z ^[[0m^[[1mInitializing the backend...^[[0m
+apply-staging	Run terraform init -input=false	2026-11-27T04:40:28.9467330Z ^[[0m^[[32m
+apply-staging	Run terraform init -input=false	2026-11-27T04:40:28.9468185Z Successfully configured the backend "s3"! Terraform will automatically
+apply-staging	Run terraform init -input=false	2026-11-27T04:40:28.9469333Z use this backend unless the backend configuration changes.^[[0m
+apply-staging	Run terraform init -input=false	2026-11-27T04:40:29.0812446Z ^[[0m^[[1mInitializing modules...^[[0m
+apply-staging	Run terraform init -input=false	2026-11-27T04:40:29.0847951Z - web in ../modules/web
+apply-staging	Run terraform init -input=false	2026-11-27T04:40:29.0861657Z ^[[0m^[[1mInitializing provider plugins...^[[0m
+apply-staging	Run terraform init -input=false	2026-11-27T04:40:29.0862703Z - Reusing previous version of hashicorp/aws from the dependency lock file
+apply-staging	Run terraform init -input=false	2026-11-27T04:40:29.2718923Z - Installing hashicorp/aws v5.100.0...
+apply-staging	Run terraform init -input=false	2026-11-27T04:40:36.1233396Z - Installed hashicorp/aws v5.100.0 (signed by HashiCorp)
+apply-staging	Run terraform init -input=false	2026-11-27T04:40:36.1233749Z 
+apply-staging	Run terraform init -input=false	2026-11-27T04:40:36.1234302Z ^[[0m^[[1m^[[32mTerraform has been successfully initialized!^[[0m^[[32m^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	﻿2026-11-27T04:40:36.1286888Z ##[group]Run terraform apply -input=false -auto-approve
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:36.1287727Z ^[[36;1mterraform apply -input=false -auto-approve^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:36.1307812Z shell: /usr/bin/bash -e {0}
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:36.1308082Z env:
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:36.1308298Z   TF_IN_AUTOMATION: true
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:36.1308563Z   AWS_DEFAULT_REGION: us-east-1
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:36.1308813Z   AWS_REGION: us-east-1
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:36.1309329Z   AWS_ACCESS_KEY_ID: ***
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:36.1309677Z   AWS_SECRET_ACCESS_KEY: ***
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:36.1312995Z   AWS_SESSION_TOKEN: ***
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:36.1313238Z ##[endgroup]
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:39.4777518Z ^[[0m^[[1mmodule.web.data.aws_ami.al2023: Reading...^[[0m^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:39.4778533Z ^[[0m^[[1mmodule.web.data.aws_ssm_parameter.db_password: Reading...^[[0m^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:39.4779201Z ^[[0m^[[1mmodule.web.data.aws_availability_zones.available: Reading...^[[0m^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:39.7643157Z ^[[0m^[[1mmodule.web.data.aws_availability_zones.available: Read complete after 1s [id=us-east-1]^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:39.7797761Z ^[[0m^[[1mmodule.web.data.aws_ssm_parameter.db_password: Read complete after 1s [id=/acs730/assignment1/staging/db_password]^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.1772303Z ^[[0m^[[1mmodule.web.data.aws_ami.al2023: Read complete after 1s [id=ami-062caee4b7b602eb0]^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3375203Z 
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3375970Z Terraform used the selected providers to generate the following execution
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3376823Z plan. Resource actions are indicated with the following symbols:
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3377792Z   ^[[32m+^[[0m create^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3378058Z 
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3378280Z Terraform will perform the following actions:
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3378624Z 
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3378902Z ^[[1m  # module.web.aws_cloudwatch_metric_alarm.cpu_high^[[0m will be created
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3379390Z ^[[0m  ^[[32m+^[[0m^[[0m resource "aws_cloudwatch_metric_alarm" "cpu_high" {
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3379811Z       ^[[32m+^[[0m^[[0m actions_enabled                       = true
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3380482Z       ^[[32m+^[[0m^[[0m alarm_description                     = "Average CPU above threshold for 10 minutes"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3381469Z       ^[[32m+^[[0m^[[0m alarm_name                            = "acs730-a1-aparna-staging-cpu-high"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3382335Z       ^[[32m+^[[0m^[[0m arn                                   = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3383185Z       ^[[32m+^[[0m^[[0m comparison_operator                   = "GreaterThanThreshold"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3384057Z       ^[[32m+^[[0m^[[0m dimensions                            = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3384939Z       ^[[32m+^[[0m^[[0m evaluate_low_sample_count_percentiles = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3385741Z       ^[[32m+^[[0m^[[0m evaluation_periods                    = 2
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3386473Z       ^[[32m+^[[0m^[[0m id                                    = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3387386Z       ^[[32m+^[[0m^[[0m metric_name                           = "CPUUtilization"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3388178Z       ^[[32m+^[[0m^[[0m namespace                             = "AWS/EC2"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3388894Z       ^[[32m+^[[0m^[[0m period                                = 300
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3389627Z       ^[[32m+^[[0m^[[0m statistic                             = "Average"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3390318Z       ^[[32m+^[[0m^[[0m tags                                  = {
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3390941Z           ^[[32m+^[[0m^[[0m "Environment" = "staging"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3391562Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3392033Z         }
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3392531Z       ^[[32m+^[[0m^[[0m tags_all                              = {
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3393161Z           ^[[32m+^[[0m^[[0m "Course"      = "ACS730"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3393769Z           ^[[32m+^[[0m^[[0m "Environment" = "staging"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3394368Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3394813Z           ^[[32m+^[[0m^[[0m "Owner"       = "aparna"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3395071Z         }
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3395713Z       ^[[32m+^[[0m^[[0m threshold                             = 80
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3396108Z       ^[[32m+^[[0m^[[0m treat_missing_data                    = "missing"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3396409Z     }
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3396624Z 
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3396814Z ^[[1m  # module.web.aws_instance.web^[[0m will be created
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3397516Z ^[[0m  ^[[32m+^[[0m^[[0m resource "aws_instance" "web" {
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3397930Z       ^[[32m+^[[0m^[[0m ami                                  = "ami-062caee4b7b602eb0"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3398390Z       ^[[32m+^[[0m^[[0m arn                                  = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3398843Z       ^[[32m+^[[0m^[[0m associate_public_ip_address          = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3399317Z       ^[[32m+^[[0m^[[0m availability_zone                    = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3399787Z       ^[[32m+^[[0m^[[0m cpu_core_count                       = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3400351Z       ^[[32m+^[[0m^[[0m cpu_threads_per_core                 = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3400805Z       ^[[32m+^[[0m^[[0m disable_api_stop                     = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3401273Z       ^[[32m+^[[0m^[[0m disable_api_termination              = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3401730Z       ^[[32m+^[[0m^[[0m ebs_optimized                        = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3402186Z       ^[[32m+^[[0m^[[0m enable_primary_ipv6                  = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3402615Z       ^[[32m+^[[0m^[[0m get_password_data                    = false
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3403021Z       ^[[32m+^[[0m^[[0m host_id                              = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3403461Z       ^[[32m+^[[0m^[[0m host_resource_group_arn              = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3403923Z       ^[[32m+^[[0m^[[0m iam_instance_profile                 = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3404357Z       ^[[32m+^[[0m^[[0m id                                   = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3404803Z       ^[[32m+^[[0m^[[0m instance_initiated_shutdown_behavior = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3405277Z       ^[[32m+^[[0m^[[0m instance_lifecycle                   = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3405731Z       ^[[32m+^[[0m^[[0m instance_state                       = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3406151Z       ^[[32m+^[[0m^[[0m instance_type                        = "t3.micro"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3406586Z       ^[[32m+^[[0m^[[0m ipv6_address_count                   = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3407208Z       ^[[32m+^[[0m^[[0m ipv6_addresses                       = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3407652Z       ^[[32m+^[[0m^[[0m key_name                             = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3408125Z       ^[[32m+^[[0m^[[0m monitoring                           = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3408570Z       ^[[32m+^[[0m^[[0m outpost_arn                          = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3409032Z       ^[[32m+^[[0m^[[0m password_data                        = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3409493Z       ^[[32m+^[[0m^[[0m placement_group                      = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3409961Z       ^[[32m+^[[0m^[[0m placement_partition_number           = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3410428Z       ^[[32m+^[[0m^[[0m primary_network_interface_id         = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3410886Z       ^[[32m+^[[0m^[[0m private_dns                          = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3411322Z       ^[[32m+^[[0m^[[0m private_ip                           = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3411755Z       ^[[32m+^[[0m^[[0m public_dns                           = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3412285Z       ^[[32m+^[[0m^[[0m public_ip                            = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3412768Z       ^[[32m+^[[0m^[[0m secondary_private_ips                = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3413229Z       ^[[32m+^[[0m^[[0m security_groups                      = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3413810Z       ^[[32m+^[[0m^[[0m source_dest_check                    = true
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3414237Z       ^[[32m+^[[0m^[[0m spot_instance_request_id             = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3414688Z       ^[[32m+^[[0m^[[0m subnet_id                            = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3415108Z       ^[[32m+^[[0m^[[0m tags                                 = {
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3415465Z           ^[[32m+^[[0m^[[0m "Environment" = "staging"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3415803Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3416213Z           ^[[32m+^[[0m^[[0m "Name"        = "acs730-a1-aparna-staging-web"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3416520Z         }
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3416785Z       ^[[32m+^[[0m^[[0m tags_all                             = {
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3417334Z           ^[[32m+^[[0m^[[0m "Course"      = "ACS730"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3417662Z           ^[[32m+^[[0m^[[0m "Environment" = "staging"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3418078Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3418482Z           ^[[32m+^[[0m^[[0m "Name"        = "acs730-a1-aparna-staging-web"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3418849Z           ^[[32m+^[[0m^[[0m "Owner"       = "aparna"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3419103Z         }
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3419406Z       ^[[32m+^[[0m^[[0m tenancy                              = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3419914Z       ^[[32m+^[[0m^[[0m user_data                            = "b90d151c3c7d7357eade7939a851eac5b44b35a6"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3420404Z       ^[[32m+^[[0m^[[0m user_data_base64                     = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3420818Z       ^[[32m+^[[0m^[[0m user_data_replace_on_change          = false
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3421248Z       ^[[32m+^[[0m^[[0m vpc_security_group_ids               = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3421490Z 
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3421711Z       ^[[32m+^[[0m^[[0m capacity_reservation_specification (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3421963Z 
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3422125Z       ^[[32m+^[[0m^[[0m cpu_options (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3422321Z 
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3422491Z       ^[[32m+^[[0m^[[0m ebs_block_device (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3422696Z 
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3422856Z       ^[[32m+^[[0m^[[0m enclave_options (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3423058Z 
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3423242Z       ^[[32m+^[[0m^[[0m ephemeral_block_device (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3423460Z 
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3423647Z       ^[[32m+^[[0m^[[0m instance_market_options (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3423872Z 
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3424046Z       ^[[32m+^[[0m^[[0m maintenance_options (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3424266Z 
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3424434Z       ^[[32m+^[[0m^[[0m metadata_options (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3424632Z 
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3424804Z       ^[[32m+^[[0m^[[0m network_interface (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3425012Z 
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3425192Z       ^[[32m+^[[0m^[[0m private_dns_name_options (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3425419Z 
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3425590Z       ^[[32m+^[[0m^[[0m root_block_device (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3425862Z     }
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3425970Z 
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3426217Z ^[[1m  # module.web.aws_internet_gateway.main^[[0m will be created
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3426630Z ^[[0m  ^[[32m+^[[0m^[[0m resource "aws_internet_gateway" "main" {
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3427079Z       ^[[32m+^[[0m^[[0m arn      = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3427411Z       ^[[32m+^[[0m^[[0m id       = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3427752Z       ^[[32m+^[[0m^[[0m owner_id = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3428059Z       ^[[32m+^[[0m^[[0m tags     = {
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3428359Z           ^[[32m+^[[0m^[[0m "Environment" = "staging"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3428700Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3429093Z           ^[[32m+^[[0m^[[0m "Name"        = "acs730-a1-aparna-staging-igw"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3429403Z         }
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3429634Z       ^[[32m+^[[0m^[[0m tags_all = {
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3429936Z           ^[[32m+^[[0m^[[0m "Course"      = "ACS730"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3430346Z           ^[[32m+^[[0m^[[0m "Environment" = "staging"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3430677Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3431067Z           ^[[32m+^[[0m^[[0m "Name"        = "acs730-a1-aparna-staging-igw"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3431430Z           ^[[32m+^[[0m^[[0m "Owner"       = "aparna"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3431682Z         }
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3431937Z       ^[[32m+^[[0m^[[0m vpc_id   = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3432195Z     }
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3432298Z 
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3432490Z ^[[1m  # module.web.aws_route_table.public^[[0m will be created
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3432889Z ^[[0m  ^[[32m+^[[0m^[[0m resource "aws_route_table" "public" {
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3433254Z       ^[[32m+^[[0m^[[0m arn              = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3433611Z       ^[[32m+^[[0m^[[0m id               = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3433961Z       ^[[32m+^[[0m^[[0m owner_id         = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3434400Z       ^[[32m+^[[0m^[[0m propagating_vgws = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3434721Z       ^[[32m+^[[0m^[[0m route            = [
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3434996Z           ^[[32m+^[[0m^[[0m {
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3435315Z               ^[[32m+^[[0m^[[0m cidr_block                 = "0.0.0.0/0"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3435716Z               ^[[32m+^[[0m^[[0m gateway_id                 = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3436149Z                 ^[[90m# (11 unchanged attributes hidden)^[[0m^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3436436Z             },
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3436621Z         ]
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3436845Z       ^[[32m+^[[0m^[[0m tags             = {
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3437243Z           ^[[32m+^[[0m^[[0m "Environment" = "staging"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3437577Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3437977Z           ^[[32m+^[[0m^[[0m "Name"        = "acs730-a1-aparna-staging-public-rt"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3438295Z         }
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3438536Z       ^[[32m+^[[0m^[[0m tags_all         = {
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3438841Z           ^[[32m+^[[0m^[[0m "Course"      = "ACS730"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3439184Z           ^[[32m+^[[0m^[[0m "Environment" = "staging"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3439581Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3439976Z           ^[[32m+^[[0m^[[0m "Name"        = "acs730-a1-aparna-staging-public-rt"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3440353Z           ^[[32m+^[[0m^[[0m "Owner"       = "aparna"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3440616Z         }
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3440880Z       ^[[32m+^[[0m^[[0m vpc_id           = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3441155Z     }
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3441269Z 
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3441521Z ^[[1m  # module.web.aws_route_table_association.public["a"]^[[0m will be created
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3442002Z ^[[0m  ^[[32m+^[[0m^[[0m resource "aws_route_table_association" "public" {
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3442408Z       ^[[32m+^[[0m^[[0m id             = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3442763Z       ^[[32m+^[[0m^[[0m route_table_id = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3443128Z       ^[[32m+^[[0m^[[0m subnet_id      = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3443396Z     }
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3443501Z 
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3443736Z ^[[1m  # module.web.aws_route_table_association.public["b"]^[[0m will be created
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3444207Z ^[[0m  ^[[32m+^[[0m^[[0m resource "aws_route_table_association" "public" {
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3444591Z       ^[[32m+^[[0m^[[0m id             = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3444937Z       ^[[32m+^[[0m^[[0m route_table_id = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3445294Z       ^[[32m+^[[0m^[[0m subnet_id      = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3445565Z     }
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3445667Z 
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3445856Z ^[[1m  # module.web.aws_security_group.web^[[0m will be created
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3446252Z ^[[0m  ^[[32m+^[[0m^[[0m resource "aws_security_group" "web" {
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3446635Z       ^[[32m+^[[0m^[[0m arn                    = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3447123Z       ^[[32m+^[[0m^[[0m description            = "Web ingress for ACS"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3447696Z       ^[[32m+^[[0m^[[0m egress                 = [
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3447987Z           ^[[32m+^[[0m^[[0m {
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3448266Z               ^[[32m+^[[0m^[[0m cidr_blocks      = [
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3448586Z                   ^[[32m+^[[0m^[[0m "0.0.0.0/0",
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3448834Z                 ]
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3449118Z               ^[[32m+^[[0m^[[0m description      = "All outbound"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3449474Z               ^[[32m+^[[0m^[[0m from_port        = 0
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3449799Z               ^[[32m+^[[0m^[[0m ipv6_cidr_blocks = []
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3450125Z               ^[[32m+^[[0m^[[0m prefix_list_ids  = []
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3450466Z               ^[[32m+^[[0m^[[0m protocol         = "-1"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3450794Z               ^[[32m+^[[0m^[[0m security_groups  = []
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3451117Z               ^[[32m+^[[0m^[[0m self             = false
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3451430Z               ^[[32m+^[[0m^[[0m to_port          = 0
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3451806Z             },
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3451988Z         ]
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3452272Z       ^[[32m+^[[0m^[[0m id                     = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3452619Z       ^[[32m+^[[0m^[[0m ingress                = [
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3452920Z           ^[[32m+^[[0m^[[0m {
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3453194Z               ^[[32m+^[[0m^[[0m cidr_blocks      = [
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3453502Z                   ^[[32m+^[[0m^[[0m "0.0.0.0/0",
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3453757Z                 ]
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3454056Z               ^[[32m+^[[0m^[[0m description      = "HTTP from anywhere"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3454410Z               ^[[32m+^[[0m^[[0m from_port        = 80
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3454744Z               ^[[32m+^[[0m^[[0m ipv6_cidr_blocks = []
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3547401Z               ^[[32m+^[[0m^[[0m prefix_list_ids  = []
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3547883Z               ^[[32m+^[[0m^[[0m protocol         = "tcp"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3548264Z               ^[[32m+^[[0m^[[0m security_groups  = []
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3548630Z               ^[[32m+^[[0m^[[0m self             = false
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3548971Z               ^[[32m+^[[0m^[[0m to_port          = 80
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3549273Z             },
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3549476Z         ]
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3549932Z       ^[[32m+^[[0m^[[0m name                   = "acs730-a1-aparna-staging-web"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3550368Z       ^[[32m+^[[0m^[[0m name_prefix            = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3550780Z       ^[[32m+^[[0m^[[0m owner_id               = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3551147Z       ^[[32m+^[[0m^[[0m revoke_rules_on_delete = false
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3551486Z       ^[[32m+^[[0m^[[0m tags                   = {
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3551835Z           ^[[32m+^[[0m^[[0m "Environment" = "staging"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3552173Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3552569Z           ^[[32m+^[[0m^[[0m "Name"        = "acs730-a1-aparna-staging-web-sg"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3552905Z         }
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3553153Z       ^[[32m+^[[0m^[[0m tags_all               = {
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3553479Z           ^[[32m+^[[0m^[[0m "Course"      = "ACS730"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3553799Z           ^[[32m+^[[0m^[[0m "Environment" = "staging"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3554133Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3554519Z           ^[[32m+^[[0m^[[0m "Name"        = "acs730-a1-aparna-staging-web-sg"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3554895Z           ^[[32m+^[[0m^[[0m "Owner"       = "aparna"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3555158Z         }
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3555440Z       ^[[32m+^[[0m^[[0m vpc_id                 = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3555731Z     }
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3555843Z 
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3556052Z ^[[1m  # module.web.aws_subnet.public["a"]^[[0m will be created
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3556444Z ^[[0m  ^[[32m+^[[0m^[[0m resource "aws_subnet" "public" {
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3556856Z       ^[[32m+^[[0m^[[0m arn                                            = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3557570Z       ^[[32m+^[[0m^[[0m assign_ipv6_address_on_creation                = false
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3558254Z       ^[[32m+^[[0m^[[0m availability_zone                              = "us-east-1a"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3558761Z       ^[[32m+^[[0m^[[0m availability_zone_id                           = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3559280Z       ^[[32m+^[[0m^[[0m cidr_block                                     = "10.20.1.0/24"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3559758Z       ^[[32m+^[[0m^[[0m enable_dns64                                   = false
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3560197Z       ^[[32m+^[[0m^[[0m enable_resource_name_dns_a_record_on_launch    = false
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3560663Z       ^[[32m+^[[0m^[[0m enable_resource_name_dns_aaaa_record_on_launch = false
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3561110Z       ^[[32m+^[[0m^[[0m id                                             = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3561599Z       ^[[32m+^[[0m^[[0m ipv6_cidr_block_association_id                 = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3562081Z       ^[[32m+^[[0m^[[0m ipv6_native                                    = false
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3562593Z       ^[[32m+^[[0m^[[0m map_public_ip_on_launch                        = true
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3563047Z       ^[[32m+^[[0m^[[0m owner_id                                       = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3563638Z       ^[[32m+^[[0m^[[0m private_dns_hostname_type_on_launch            = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3564160Z       ^[[32m+^[[0m^[[0m tags                                           = {
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3564524Z           ^[[32m+^[[0m^[[0m "Environment" = "staging"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3564868Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3565270Z           ^[[32m+^[[0m^[[0m "Name"        = "acs730-a1-aparna-staging-public-a"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3565595Z         }
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3565881Z       ^[[32m+^[[0m^[[0m tags_all                                       = {
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3566247Z           ^[[32m+^[[0m^[[0m "Course"      = "ACS730"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3566576Z           ^[[32m+^[[0m^[[0m "Environment" = "staging"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3566917Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3567516Z           ^[[32m+^[[0m^[[0m "Name"        = "acs730-a1-aparna-staging-public-a"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3567895Z           ^[[32m+^[[0m^[[0m "Owner"       = "aparna"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3568151Z         }
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3568478Z       ^[[32m+^[[0m^[[0m vpc_id                                         = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3568801Z     }
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3568915Z 
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3569111Z ^[[1m  # module.web.aws_subnet.public["b"]^[[0m will be created
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3569519Z ^[[0m  ^[[32m+^[[0m^[[0m resource "aws_subnet" "public" {
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3569926Z       ^[[32m+^[[0m^[[0m arn                                            = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3570373Z       ^[[32m+^[[0m^[[0m assign_ipv6_address_on_creation                = false
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3570850Z       ^[[32m+^[[0m^[[0m availability_zone                              = "us-east-1b"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3571353Z       ^[[32m+^[[0m^[[0m availability_zone_id                           = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3571833Z       ^[[32m+^[[0m^[[0m cidr_block                                     = "10.20.2.0/24"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3572277Z       ^[[32m+^[[0m^[[0m enable_dns64                                   = false
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3572714Z       ^[[32m+^[[0m^[[0m enable_resource_name_dns_a_record_on_launch    = false
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3573163Z       ^[[32m+^[[0m^[[0m enable_resource_name_dns_aaaa_record_on_launch = false
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3573617Z       ^[[32m+^[[0m^[[0m id                                             = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3574107Z       ^[[32m+^[[0m^[[0m ipv6_cidr_block_association_id                 = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3574578Z       ^[[32m+^[[0m^[[0m ipv6_native                                    = false
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3575013Z       ^[[32m+^[[0m^[[0m map_public_ip_on_launch                        = true
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3575470Z       ^[[32m+^[[0m^[[0m owner_id                                       = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3576096Z       ^[[32m+^[[0m^[[0m private_dns_hostname_type_on_launch            = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3576578Z       ^[[32m+^[[0m^[[0m tags                                           = {
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3576939Z           ^[[32m+^[[0m^[[0m "Environment" = "staging"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3577489Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3577892Z           ^[[32m+^[[0m^[[0m "Name"        = "acs730-a1-aparna-staging-public-b"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3578224Z         }
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3578523Z       ^[[32m+^[[0m^[[0m tags_all                                       = {
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3578886Z           ^[[32m+^[[0m^[[0m "Course"      = "ACS730"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3579227Z           ^[[32m+^[[0m^[[0m "Environment" = "staging"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3579560Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3579948Z           ^[[32m+^[[0m^[[0m "Name"        = "acs730-a1-aparna-staging-public-b"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3580406Z           ^[[32m+^[[0m^[[0m "Owner"       = "aparna"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3580656Z         }
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3580970Z       ^[[32m+^[[0m^[[0m vpc_id                                         = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3581297Z     }
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3581399Z 
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3581567Z ^[[1m  # module.web.aws_vpc.main^[[0m will be created
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3581914Z ^[[0m  ^[[32m+^[[0m^[[0m resource "aws_vpc" "main" {
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3582315Z       ^[[32m+^[[0m^[[0m arn                                  = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3582736Z       ^[[32m+^[[0m^[[0m cidr_block                           = "10.20.0.0/16"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3583174Z       ^[[32m+^[[0m^[[0m default_network_acl_id               = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3583630Z       ^[[32m+^[[0m^[[0m default_route_table_id               = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3584090Z       ^[[32m+^[[0m^[[0m default_security_group_id            = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3584679Z       ^[[32m+^[[0m^[[0m dhcp_options_id                      = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3585114Z       ^[[32m+^[[0m^[[0m enable_dns_hostnames                 = true
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3585503Z       ^[[32m+^[[0m^[[0m enable_dns_support                   = true
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3585928Z       ^[[32m+^[[0m^[[0m enable_network_address_usage_metrics = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3586362Z       ^[[32m+^[[0m^[[0m id                                   = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3586770Z       ^[[32m+^[[0m^[[0m instance_tenancy                     = "default"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3587502Z       ^[[32m+^[[0m^[[0m ipv6_association_id                  = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3588193Z       ^[[32m+^[[0m^[[0m ipv6_cidr_block                      = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3588664Z       ^[[32m+^[[0m^[[0m ipv6_cidr_block_network_border_group = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3589118Z       ^[[32m+^[[0m^[[0m main_route_table_id                  = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3589566Z       ^[[32m+^[[0m^[[0m owner_id                             = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3589966Z       ^[[32m+^[[0m^[[0m tags                                 = {
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3590311Z           ^[[32m+^[[0m^[[0m "Environment" = "staging"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3590641Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3591028Z           ^[[32m+^[[0m^[[0m "Name"        = "acs730-a1-aparna-staging-vpc"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3591328Z         }
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3591592Z       ^[[32m+^[[0m^[[0m tags_all                             = {
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3591937Z           ^[[32m+^[[0m^[[0m "Course"      = "ACS730"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3592263Z           ^[[32m+^[[0m^[[0m "Environment" = "staging"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3592594Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3592978Z           ^[[32m+^[[0m^[[0m "Name"        = "acs730-a1-aparna-staging-vpc"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3593349Z           ^[[32m+^[[0m^[[0m "Owner"       = "aparna"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3593743Z         }
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3593926Z     }
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3594037Z 
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3594209Z ^[[1mPlan:^[[0m 10 to add, 0 to change, 0 to destroy.
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3594498Z ^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3594690Z Changes to Outputs:
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3595039Z   ^[[32m+^[[0m^[[0m instance_id = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.3595526Z   ^[[32m+^[[0m^[[0m web_url     = (known after apply)
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:40.9056654Z ^[[0m^[[1mmodule.web.aws_vpc.main: Creating...^[[0m^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:50.9067794Z ^[[0m^[[1mmodule.web.aws_vpc.main: Still creating... [10s elapsed]^[[0m^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:53.2872949Z ^[[0m^[[1mmodule.web.aws_vpc.main: Creation complete after 12s [id=vpc-099472bf54dea90a0]^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:53.2918239Z ^[[0m^[[1mmodule.web.aws_internet_gateway.main: Creating...^[[0m^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:53.2938553Z ^[[0m^[[1mmodule.web.aws_subnet.public["a"]: Creating...^[[0m^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:53.2950683Z ^[[0m^[[1mmodule.web.aws_subnet.public["b"]: Creating...^[[0m^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:53.2952493Z ^[[0m^[[1mmodule.web.aws_security_group.web: Creating...^[[0m^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:53.9874176Z ^[[0m^[[1mmodule.web.aws_internet_gateway.main: Creation complete after 1s [id=igw-0c8016b671346c2da]^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:53.9916504Z ^[[0m^[[1mmodule.web.aws_route_table.public: Creating...^[[0m^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:55.2147523Z ^[[0m^[[1mmodule.web.aws_route_table.public: Creation complete after 1s [id=rtb-00eb9d0aa4621bf30]^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:40:56.4417380Z ^[[0m^[[1mmodule.web.aws_security_group.web: Creation complete after 3s [id=sg-05bafe658289f619a]^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:41:03.2959050Z ^[[0m^[[1mmodule.web.aws_subnet.public["a"]: Still creating... [10s elapsed]^[[0m^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:41:03.2959828Z ^[[0m^[[1mmodule.web.aws_subnet.public["b"]: Still creating... [10s elapsed]^[[0m^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:41:04.7557276Z ^[[0m^[[1mmodule.web.aws_subnet.public["a"]: Creation complete after 12s [id=subnet-063e3b18bdcd39e13]^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:41:04.7914577Z ^[[0m^[[1mmodule.web.aws_subnet.public["b"]: Creation complete after 12s [id=subnet-0c0184bdcf3eb9369]^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:41:04.7947267Z ^[[0m^[[1mmodule.web.aws_route_table_association.public["a"]: Creating...^[[0m^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:41:04.7948648Z ^[[0m^[[1mmodule.web.aws_route_table_association.public["b"]: Creating...^[[0m^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:41:05.2586537Z ^[[0m^[[1mmodule.web.aws_route_table_association.public["a"]: Creation complete after 0s [id=rtbassoc-063cb0645ea6abaf9]^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:41:05.3002541Z ^[[0m^[[1mmodule.web.aws_route_table_association.public["b"]: Creation complete after 0s [id=rtbassoc-0cb24c18b1b3f7830]^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:41:05.3090503Z ^[[0m^[[1mmodule.web.aws_instance.web: Creating...^[[0m^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:41:15.3103941Z ^[[0m^[[1mmodule.web.aws_instance.web: Still creating... [10s elapsed]^[[0m^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:41:19.0730925Z ^[[0m^[[1mmodule.web.aws_instance.web: Creation complete after 14s [id=i-09c74fa286b30d405]^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:41:19.4283790Z ^[[0m^[[1mmodule.web.aws_cloudwatch_metric_alarm.cpu_high: Creating...^[[0m^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:41:20.0025404Z ^[[0m^[[1mmodule.web.aws_cloudwatch_metric_alarm.cpu_high: Creation complete after 1s [id=acs730-a1-aparna-staging-cpu-high]^[[0m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:41:20.3038460Z ^[[0m^[[1m^[[32m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:41:20.3038949Z Apply complete! Resources: 10 added, 0 changed, 0 destroyed.
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:41:20.3039373Z ^[[0m^[[0m^[[1m^[[32m
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:41:20.3039619Z Outputs:
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:41:20.3039747Z 
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:41:20.3039925Z ^[[0minstance_id = "i-09c74fa286b30d405"
+apply-staging	Run terraform apply -input=false -auto-approve	2026-11-27T04:41:20.3040300Z web_url = "http://3.235.247.229/"
+apply-staging	Post Run aws-actions/configure-aws-credentials@v4	﻿2026-11-27T04:41:20.3208136Z Post job cleanup.
+apply-staging	Post Run actions/checkout@v4	﻿2026-11-27T04:41:20.4298243Z Post job cleanup.
+apply-staging	Post Run actions/checkout@v4	2026-11-27T04:41:20.5173062Z [command]/usr/bin/git version
+apply-staging	Post Run actions/checkout@v4	2026-11-27T04:41:20.5220395Z git version 2.56.1
+apply-staging	Post Run actions/checkout@v4	2026-11-27T04:41:20.5265206Z Temporarily overriding HOME='/home/runner/work/_temp/71a5f96d-ddd7-497c-92fd-c36ad2d0bca4' before making global git config changes
+apply-staging	Post Run actions/checkout@v4	2026-11-27T04:41:20.5266472Z Adding repository directory to the temporary git global config as a safe directory
+apply-staging	Post Run actions/checkout@v4	2026-11-27T04:41:20.5271971Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/acs730/acs730
+apply-staging	Post Run actions/checkout@v4	2026-11-27T04:41:20.5310141Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+apply-staging	Post Run actions/checkout@v4	2026-11-27T04:41:20.5342821Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+apply-staging	Post Run actions/checkout@v4	2026-11-27T04:41:20.5584026Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+apply-staging	Post Run actions/checkout@v4	2026-11-27T04:41:20.5606256Z http.https://github.com/.extraheader
+apply-staging	Post Run actions/checkout@v4	2026-11-27T04:41:20.5617407Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+apply-staging	Post Run actions/checkout@v4	2026-11-27T04:41:20.5648024Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+apply-staging	Post Run actions/checkout@v4	2026-11-27T04:41:20.5914246Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+apply-staging	Post Run actions/checkout@v4	2026-11-27T04:41:20.5946624Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+apply-staging	Complete job	﻿2026-11-27T04:41:20.6368744Z Cleaning up orphan processes
+apply-staging	Complete job	2026-11-27T04:41:20.6698933Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, aws-actions/configure-aws-credentials@v4, hashicorp/setup-terraform@v3. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+apply-prod	Set up job	﻿2026-11-27T04:46:22.8547631Z Current runner version: '2.338.2'
+apply-prod	Set up job	2026-11-27T04:46:22.8564331Z ##[group]Runner Image Provisioner
+apply-prod	Set up job	2026-11-27T04:46:22.8564941Z Hosted Compute Agent
+apply-prod	Set up job	2026-11-27T04:46:22.8565327Z Version: 20261111.635
+apply-prod	Set up job	2026-11-27T04:46:22.8565741Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+apply-prod	Set up job	2026-11-27T04:46:22.8566274Z Build Date: 2026-11-11T01:49:01Z
+apply-prod	Set up job	2026-11-27T04:46:22.8566697Z Worker ID: {a8c7fd0a-cf4c-47ea-b8c4-9080639741e9}
+apply-prod	Set up job	2026-11-27T04:46:22.8567195Z Region: westus3
+apply-prod	Set up job	2026-11-27T04:46:22.8567554Z Cloud: Azure
+apply-prod	Set up job	2026-11-27T04:46:22.8568113Z ##[endgroup]
+apply-prod	Set up job	2026-11-27T04:46:22.8569194Z ##[group]Operating System
+apply-prod	Set up job	2026-11-27T04:46:22.8569798Z Ubuntu
+apply-prod	Set up job	2026-11-27T04:46:22.8570188Z 26.04.1
+apply-prod	Set up job	2026-11-27T04:46:22.8570518Z LTS
+apply-prod	Set up job	2026-11-27T04:46:22.8570931Z ##[endgroup]
+apply-prod	Set up job	2026-11-27T04:46:22.8571292Z ##[group]Runner Image
+apply-prod	Set up job	2026-11-27T04:46:22.8571672Z Image: ubuntu-26.04
+apply-prod	Set up job	2026-11-27T04:46:22.8572092Z Version: 20261122.9.1
+apply-prod	Set up job	2026-11-27T04:46:22.8572722Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261122.9/images/ubuntu/Ubuntu2604-Readme.md
+apply-prod	Set up job	2026-11-27T04:46:22.8573792Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261122.9
+apply-prod	Set up job	2026-11-27T04:46:22.8574355Z ##[endgroup]
+apply-prod	Set up job	2026-11-27T04:46:22.8575088Z ##[group]GITHUB_TOKEN Permissions
+apply-prod	Set up job	2026-11-27T04:46:22.8576535Z Contents: read
+apply-prod	Set up job	2026-11-27T04:46:22.8576905Z Metadata: read
+apply-prod	Set up job	2026-11-27T04:46:22.8577250Z ##[endgroup]
+apply-prod	Set up job	2026-11-27T04:46:22.8578567Z Secret source: Actions
+apply-prod	Set up job	2026-11-27T04:46:22.8579166Z Cache mode: write
+apply-prod	Set up job	2026-11-27T04:46:22.8580011Z Prepare workflow directory
+apply-prod	Set up job	2026-11-27T04:46:22.8826592Z Prepare all required actions
+apply-prod	Set up job	2026-11-27T04:46:22.8857126Z Getting action download info
+apply-prod	Set up job	2026-11-27T04:46:23.2189886Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+apply-prod	Set up job	2026-11-27T04:46:23.2947448Z Download action repository 'aws-actions/configure-aws-credentials@v4' (SHA:7474bc4690e29a8392af63c5b98e7449536d5c3a)
+apply-prod	Set up job	2026-11-27T04:46:23.8530346Z Download action repository 'hashicorp/setup-terraform@v3' (SHA:b9cd54a3c349d3f38e8881555d616ced269862dd)
+apply-prod	Set up job	2026-11-27T04:46:24.4869134Z Complete job name: apply-prod
+apply-prod	Run actions/checkout@v4	﻿2026-11-27T04:46:24.5425547Z ##[group]Run actions/checkout@v4
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.5426181Z with:
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.5426629Z   repository: AparnaGopi/acs730
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.5428595Z   token: ***
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.5429048Z   ssh-strict: true
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.5429488Z   ssh-user: git
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.5430072Z   persist-credentials: true
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.5430554Z   clean: true
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.5431014Z   sparse-checkout-cone-mode: true
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.5431492Z   fetch-depth: 1
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.5431943Z   fetch-tags: false
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.5432402Z   show-progress: true
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.5432860Z   lfs: false
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.5433291Z   submodules: false
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.5433759Z   set-safe-directory: true
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.5434258Z   allow-unsafe-pr-checkout: false
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.5434858Z env:
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.5435292Z   TF_IN_AUTOMATION: true
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.5435749Z ##[endgroup]
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7535805Z Syncing repository: AparnaGopi/acs730
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7537636Z ##[group]Getting Git version info
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7538298Z Working directory is '/home/runner/work/acs730/acs730'
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7539235Z [command]/usr/bin/git version
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7540108Z git version 2.56.1
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7552724Z ##[endgroup]
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7562079Z Temporarily overriding HOME='/home/runner/work/_temp/f3675575-d074-49cd-ba18-7ee69b0abd04' before making global git config changes
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7563352Z Adding repository directory to the temporary git global config as a safe directory
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7565264Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/acs730/acs730
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7619300Z Deleting the contents of '/home/runner/work/acs730/acs730'
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7623331Z ##[group]Initializing the repository
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7627213Z [command]/usr/bin/git init /home/runner/work/acs730/acs730
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7729042Z hint: Using 'master' as the name for the initial branch. This default branch name
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7731939Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7733163Z hint: to use in all of your new repositories, which will suppress this warning,
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7734434Z hint: call:
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7735178Z hint:
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7736109Z hint: 	git config --global init.defaultBranch <name>
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7737437Z hint:
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7738295Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7739324Z hint: 'development'. The just-created branch can be renamed via this command:
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7740280Z hint:
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7740915Z hint: 	git branch -m <name>
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7741579Z hint:
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7742359Z hint: Disable this message with "git config set advice.defaultBranchName false"
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7752085Z Initialized empty Git repository in /home/runner/work/acs730/acs730/.git/
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7756191Z [command]/usr/bin/git remote add origin https://github.com/AparnaGopi/acs730
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7813800Z ##[endgroup]
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7815160Z ##[group]Disabling automatic garbage collection
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7828381Z [command]/usr/bin/git config --local gc.auto 0
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7858086Z ##[endgroup]
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7859172Z ##[group]Setting up auth
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7863793Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.7893643Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.8301676Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.8329282Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.8543218Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.8570365Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.8777708Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.8808628Z ##[endgroup]
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.8809838Z ##[group]Fetching the repository
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:24.8814713Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +e4253b7d094eb977e4ddbe1ccde2b2244c243f80:refs/remotes/origin/main
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:25.9078205Z From https://github.com/AparnaGopi/acs730
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:25.9078926Z  * [new ref]         e4253b7d094eb977e4ddbe1ccde2b2244c243f80 -> origin/main
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:25.9089977Z ##[endgroup]
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:25.9090390Z ##[group]Determining the checkout info
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:25.9090771Z ##[endgroup]
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:25.9092305Z [command]/usr/bin/git sparse-checkout disable
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:25.9137770Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:25.9162116Z ##[group]Checking out the ref
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:25.9173661Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:25.9412344Z Switched to a new branch 'main'
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:25.9417962Z branch 'main' set up to track 'origin/main'.
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:25.9422891Z ##[endgroup]
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:25.9460728Z [command]/usr/bin/git log -1 --format=%H
+apply-prod	Run actions/checkout@v4	2026-11-27T04:46:25.9480179Z e4253b7d094eb977e4ddbe1ccde2b2244c243f80
+apply-prod	Run aws-actions/configure-aws-credentials@v4	﻿2026-11-27T04:46:25.9731243Z ##[group]Run aws-actions/configure-aws-credentials@v4
+apply-prod	Run aws-actions/configure-aws-credentials@v4	2026-11-27T04:46:25.9731481Z with:
+apply-prod	Run aws-actions/configure-aws-credentials@v4	2026-11-27T04:46:25.9731747Z   aws-access-key-id: ***
+apply-prod	Run aws-actions/configure-aws-credentials@v4	2026-11-27T04:46:25.9731952Z   aws-secret-access-key: ***
+apply-prod	Run aws-actions/configure-aws-credentials@v4	2026-11-27T04:46:25.9733912Z   aws-session-token: ***
+apply-prod	Run aws-actions/configure-aws-credentials@v4	2026-11-27T04:46:25.9734068Z   aws-region: us-east-1
+apply-prod	Run aws-actions/configure-aws-credentials@v4	2026-11-27T04:46:25.9734207Z   audience: sts.amazonaws.com
+apply-prod	Run aws-actions/configure-aws-credentials@v4	2026-11-27T04:46:25.9734363Z   output-env-credentials: true
+apply-prod	Run aws-actions/configure-aws-credentials@v4	2026-11-27T04:46:25.9734514Z env:
+apply-prod	Run aws-actions/configure-aws-credentials@v4	2026-11-27T04:46:25.9734633Z   TF_IN_AUTOMATION: true
+apply-prod	Run aws-actions/configure-aws-credentials@v4	2026-11-27T04:46:25.9734766Z ##[endgroup]
+apply-prod	Run aws-actions/configure-aws-credentials@v4	2026-11-27T04:46:26.2795066Z Proceeding with IAM user credentials
+apply-prod	Run hashicorp/setup-terraform@v3	﻿2026-11-27T04:46:26.2901666Z ##[group]Run hashicorp/setup-terraform@v3
+apply-prod	Run hashicorp/setup-terraform@v3	2026-11-27T04:46:26.2901845Z with:
+apply-prod	Run hashicorp/setup-terraform@v3	2026-11-27T04:46:26.2901967Z   terraform_version: 1.10.3
+apply-prod	Run hashicorp/setup-terraform@v3	2026-11-27T04:46:26.2902130Z   terraform_wrapper: false
+apply-prod	Run hashicorp/setup-terraform@v3	2026-11-27T04:46:26.2902322Z   cli_config_credentials_hostname: app.terraform.io
+apply-prod	Run hashicorp/setup-terraform@v3	2026-11-27T04:46:26.2902497Z env:
+apply-prod	Run hashicorp/setup-terraform@v3	2026-11-27T04:46:26.2902612Z   TF_IN_AUTOMATION: true
+apply-prod	Run hashicorp/setup-terraform@v3	2026-11-27T04:46:26.2902751Z   AWS_DEFAULT_REGION: us-east-1
+apply-prod	Run hashicorp/setup-terraform@v3	2026-11-27T04:46:26.2902898Z   AWS_REGION: us-east-1
+apply-prod	Run hashicorp/setup-terraform@v3	2026-11-27T04:46:26.2903200Z   AWS_ACCESS_KEY_ID: ***
+apply-prod	Run hashicorp/setup-terraform@v3	2026-11-27T04:46:26.2903391Z   AWS_SECRET_ACCESS_KEY: ***
+apply-prod	Run hashicorp/setup-terraform@v3	2026-11-27T04:46:26.2905214Z   AWS_SESSION_TOKEN: ***
+apply-prod	Run hashicorp/setup-terraform@v3	2026-11-27T04:46:26.2905341Z ##[endgroup]
+apply-prod	Run hashicorp/setup-terraform@v3	2026-11-27T04:46:26.3799935Z (node:2197) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+apply-prod	Run hashicorp/setup-terraform@v3	2026-11-27T04:46:26.3800859Z (Use `node --trace-deprecation ...` to show where the warning was created)
+apply-prod	Run hashicorp/setup-terraform@v3	2026-11-27T04:46:26.6672045Z [command]/usr/bin/unzip -o -q /home/runner/work/_temp/713890d2-9fd2-4c86-adb8-543368649828
+apply-prod	Run terraform init -input=false	﻿2026-11-27T04:46:27.1197064Z ##[group]Run terraform init -input=false
+apply-prod	Run terraform init -input=false	2026-11-27T04:46:27.1197339Z ^[[36;1mterraform init -input=false^[[0m
+apply-prod	Run terraform init -input=false	2026-11-27T04:46:27.1226486Z shell: /usr/bin/bash -e {0}
+apply-prod	Run terraform init -input=false	2026-11-27T04:46:27.1226647Z env:
+apply-prod	Run terraform init -input=false	2026-11-27T04:46:27.1226766Z   TF_IN_AUTOMATION: true
+apply-prod	Run terraform init -input=false	2026-11-27T04:46:27.1226909Z   AWS_DEFAULT_REGION: us-east-1
+apply-prod	Run terraform init -input=false	2026-11-27T04:46:27.1227062Z   AWS_REGION: us-east-1
+apply-prod	Run terraform init -input=false	2026-11-27T04:46:27.1227272Z   AWS_ACCESS_KEY_ID: ***
+apply-prod	Run terraform init -input=false	2026-11-27T04:46:27.1227480Z   AWS_SECRET_ACCESS_KEY: ***
+apply-prod	Run terraform init -input=false	2026-11-27T04:46:27.1229301Z   AWS_SESSION_TOKEN: ***
+apply-prod	Run terraform init -input=false	2026-11-27T04:46:27.1229432Z ##[endgroup]
+apply-prod	Run terraform init -input=false	2026-11-27T04:46:27.1481475Z ^[[0m^[[1mInitializing the backend...^[[0m
+apply-prod	Run terraform init -input=false	2026-11-27T04:46:27.7015266Z ^[[0m^[[32m
+apply-prod	Run terraform init -input=false	2026-11-27T04:46:27.7015497Z Successfully configured the backend "s3"! Terraform will automatically
+apply-prod	Run terraform init -input=false	2026-11-27T04:46:27.7015798Z use this backend unless the backend configuration changes.^[[0m
+apply-prod	Run terraform init -input=false	2026-11-27T04:46:27.8327486Z ^[[0m^[[1mInitializing modules...^[[0m
+apply-prod	Run terraform init -input=false	2026-11-27T04:46:27.8340914Z - web in ../modules/web
+apply-prod	Run terraform init -input=false	2026-11-27T04:46:27.8347307Z ^[[0m^[[1mInitializing provider plugins...^[[0m
+apply-prod	Run terraform init -input=false	2026-11-27T04:46:27.8347836Z - Reusing previous version of hashicorp/aws from the dependency lock file
+apply-prod	Run terraform init -input=false	2026-11-27T04:46:28.1430085Z - Installing hashicorp/aws v5.100.0...
+apply-prod	Run terraform init -input=false	2026-11-27T04:46:32.8600899Z - Installed hashicorp/aws v5.100.0 (signed by HashiCorp)
+apply-prod	Run terraform init -input=false	2026-11-27T04:46:32.8601492Z 
+apply-prod	Run terraform init -input=false	2026-11-27T04:46:32.8602196Z ^[[0m^[[1m^[[32mTerraform has been successfully initialized!^[[0m^[[32m^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	﻿2026-11-27T04:46:32.8650633Z ##[group]Run terraform apply -input=false -auto-approve
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:32.8650904Z ^[[36;1mterraform apply -input=false -auto-approve^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:32.8677702Z shell: /usr/bin/bash -e {0}
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:32.8677845Z env:
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:32.8677969Z   TF_IN_AUTOMATION: true
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:32.8678109Z   AWS_DEFAULT_REGION: us-east-1
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:32.8678252Z   AWS_REGION: us-east-1
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:32.8678493Z   AWS_ACCESS_KEY_ID: ***
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:32.8678684Z   AWS_SECRET_ACCESS_KEY: ***
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:32.8680751Z   AWS_SESSION_TOKEN: ***
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:32.8680886Z ##[endgroup]
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:35.4232865Z ^[[0m^[[1mmodule.web.data.aws_availability_zones.available: Reading...^[[0m^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:35.4233536Z ^[[0m^[[1mmodule.web.data.aws_ssm_parameter.db_password: Reading...^[[0m^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:35.4250743Z ^[[0m^[[1mmodule.web.data.aws_ami.al2023: Reading...^[[0m^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:35.7390900Z ^[[0m^[[1mmodule.web.data.aws_availability_zones.available: Read complete after 1s [id=us-east-1]^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:35.7437455Z ^[[0m^[[1mmodule.web.data.aws_ssm_parameter.db_password: Read complete after 1s [id=/acs730/assignment1/prod/db_password]^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.0939725Z ^[[0m^[[1mmodule.web.data.aws_ami.al2023: Read complete after 1s [id=ami-062caee4b7b602eb0]^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2110169Z 
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2130476Z Terraform used the selected providers to generate the following execution
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2140031Z plan. Resource actions are indicated with the following symbols:
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2180022Z   ^[[32m+^[[0m create^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2209668Z 
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2239802Z Terraform will perform the following actions:
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2260970Z 
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2265253Z ^[[1m  # module.web.aws_cloudwatch_metric_alarm.cpu_high^[[0m will be created
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2265560Z ^[[0m  ^[[32m+^[[0m^[[0m resource "aws_cloudwatch_metric_alarm" "cpu_high" {
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2265834Z       ^[[32m+^[[0m^[[0m actions_enabled                       = true
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2266239Z       ^[[32m+^[[0m^[[0m alarm_description                     = "Average CPU above threshold for 10 minutes"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2266691Z       ^[[32m+^[[0m^[[0m alarm_name                            = "acs730-a1-aparna-prod-cpu-high"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2266994Z       ^[[32m+^[[0m^[[0m arn                                   = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2267272Z       ^[[32m+^[[0m^[[0m comparison_operator                   = "GreaterThanThreshold"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2267548Z       ^[[32m+^[[0m^[[0m dimensions                            = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2267825Z       ^[[32m+^[[0m^[[0m evaluate_low_sample_count_percentiles = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2268081Z       ^[[32m+^[[0m^[[0m evaluation_periods                    = 2
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2268402Z       ^[[32m+^[[0m^[[0m id                                    = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2268658Z       ^[[32m+^[[0m^[[0m metric_name                           = "CPUUtilization"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2268910Z       ^[[32m+^[[0m^[[0m namespace                             = "AWS/EC2"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2269143Z       ^[[32m+^[[0m^[[0m period                                = 300
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2269380Z       ^[[32m+^[[0m^[[0m statistic                             = "Average"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2269742Z       ^[[32m+^[[0m^[[0m tags                                  = {
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2270031Z           ^[[32m+^[[0m^[[0m "Environment" = "prod"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2270332Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2270575Z         }
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2270854Z       ^[[32m+^[[0m^[[0m tags_all                              = {
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2271173Z           ^[[32m+^[[0m^[[0m "Course"      = "ACS730"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2271475Z           ^[[32m+^[[0m^[[0m "Environment" = "prod"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2271780Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2272080Z           ^[[32m+^[[0m^[[0m "Owner"       = "aparna"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2272334Z         }
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2272624Z       ^[[32m+^[[0m^[[0m threshold                             = 80
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2273553Z       ^[[32m+^[[0m^[[0m treat_missing_data                    = "missing"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2273843Z     }
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2273952Z 
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2274136Z ^[[1m  # module.web.aws_instance.web^[[0m will be created
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2274489Z ^[[0m  ^[[32m+^[[0m^[[0m resource "aws_instance" "web" {
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2274892Z       ^[[32m+^[[0m^[[0m ami                                  = "ami-062caee4b7b602eb0"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2275315Z       ^[[32m+^[[0m^[[0m arn                                  = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2275760Z       ^[[32m+^[[0m^[[0m associate_public_ip_address          = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2276228Z       ^[[32m+^[[0m^[[0m availability_zone                    = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2276679Z       ^[[32m+^[[0m^[[0m cpu_core_count                       = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2277113Z       ^[[32m+^[[0m^[[0m cpu_threads_per_core                 = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2277737Z       ^[[32m+^[[0m^[[0m disable_api_stop                     = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2278190Z       ^[[32m+^[[0m^[[0m disable_api_termination              = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2278619Z       ^[[32m+^[[0m^[[0m ebs_optimized                        = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2279075Z       ^[[32m+^[[0m^[[0m enable_primary_ipv6                  = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2279496Z       ^[[32m+^[[0m^[[0m get_password_data                    = false
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2280047Z       ^[[32m+^[[0m^[[0m host_id                              = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2280483Z       ^[[32m+^[[0m^[[0m host_resource_group_arn              = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2280938Z       ^[[32m+^[[0m^[[0m iam_instance_profile                 = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2281369Z       ^[[32m+^[[0m^[[0m id                                   = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2281817Z       ^[[32m+^[[0m^[[0m instance_initiated_shutdown_behavior = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2282291Z       ^[[32m+^[[0m^[[0m instance_lifecycle                   = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2282744Z       ^[[32m+^[[0m^[[0m instance_state                       = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2283163Z       ^[[32m+^[[0m^[[0m instance_type                        = "t3.micro"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2283593Z       ^[[32m+^[[0m^[[0m ipv6_address_count                   = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2284038Z       ^[[32m+^[[0m^[[0m ipv6_addresses                       = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2284470Z       ^[[32m+^[[0m^[[0m key_name                             = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2284908Z       ^[[32m+^[[0m^[[0m monitoring                           = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2285341Z       ^[[32m+^[[0m^[[0m outpost_arn                          = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2285783Z       ^[[32m+^[[0m^[[0m password_data                        = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2286243Z       ^[[32m+^[[0m^[[0m placement_group                      = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2286588Z       ^[[32m+^[[0m^[[0m placement_partition_number           = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2286861Z       ^[[32m+^[[0m^[[0m primary_network_interface_id         = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2287128Z       ^[[32m+^[[0m^[[0m private_dns                          = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2287386Z       ^[[32m+^[[0m^[[0m private_ip                           = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2287640Z       ^[[32m+^[[0m^[[0m public_dns                           = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2288046Z       ^[[32m+^[[0m^[[0m public_ip                            = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2288345Z       ^[[32m+^[[0m^[[0m secondary_private_ips                = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2288610Z       ^[[32m+^[[0m^[[0m security_groups                      = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2289011Z       ^[[32m+^[[0m^[[0m source_dest_check                    = true
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2289364Z       ^[[32m+^[[0m^[[0m spot_instance_request_id             = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2289907Z       ^[[32m+^[[0m^[[0m subnet_id                            = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2290269Z       ^[[32m+^[[0m^[[0m tags                                 = {
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2290570Z           ^[[32m+^[[0m^[[0m "Environment" = "prod"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2290861Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2291204Z           ^[[32m+^[[0m^[[0m "Name"        = "acs730-a1-aparna-prod-web"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2291464Z         }
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2291700Z       ^[[32m+^[[0m^[[0m tags_all                             = {
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2292007Z           ^[[32m+^[[0m^[[0m "Course"      = "ACS730"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2292287Z           ^[[32m+^[[0m^[[0m "Environment" = "prod"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2292629Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2293144Z           ^[[32m+^[[0m^[[0m "Name"        = "acs730-a1-aparna-prod-web"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2293454Z           ^[[32m+^[[0m^[[0m "Owner"       = "aparna"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2293686Z         }
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2293972Z       ^[[32m+^[[0m^[[0m tenancy                              = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2294438Z       ^[[32m+^[[0m^[[0m user_data                            = "4c57fc91971fd5c0cf3a5838b9c8ba19efe53224"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2294892Z       ^[[32m+^[[0m^[[0m user_data_base64                     = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2295300Z       ^[[32m+^[[0m^[[0m user_data_replace_on_change          = false
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2295730Z       ^[[32m+^[[0m^[[0m vpc_security_group_ids               = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2295986Z 
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2296190Z       ^[[32m+^[[0m^[[0m capacity_reservation_specification (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2296436Z 
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2296588Z       ^[[32m+^[[0m^[[0m cpu_options (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2296780Z 
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2296941Z       ^[[32m+^[[0m^[[0m ebs_block_device (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2297143Z 
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2297301Z       ^[[32m+^[[0m^[[0m enclave_options (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2297509Z 
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2297689Z       ^[[32m+^[[0m^[[0m ephemeral_block_device (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2297901Z 
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2298084Z       ^[[32m+^[[0m^[[0m instance_market_options (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2298307Z 
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2298473Z       ^[[32m+^[[0m^[[0m maintenance_options (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2298684Z 
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2298839Z       ^[[32m+^[[0m^[[0m metadata_options (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2299024Z 
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2299187Z       ^[[32m+^[[0m^[[0m network_interface (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2299392Z 
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2299728Z       ^[[32m+^[[0m^[[0m private_dns_name_options (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2299950Z 
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2300121Z       ^[[32m+^[[0m^[[0m root_block_device (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2300401Z     }
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2300504Z 
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2300699Z ^[[1m  # module.web.aws_internet_gateway.main^[[0m will be created
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2301109Z ^[[0m  ^[[32m+^[[0m^[[0m resource "aws_internet_gateway" "main" {
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2301456Z       ^[[32m+^[[0m^[[0m arn      = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2301776Z       ^[[32m+^[[0m^[[0m id       = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2302095Z       ^[[32m+^[[0m^[[0m owner_id = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2302403Z       ^[[32m+^[[0m^[[0m tags     = {
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2302689Z           ^[[32m+^[[0m^[[0m "Environment" = "prod"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2303007Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2303373Z           ^[[32m+^[[0m^[[0m "Name"        = "acs730-a1-aparna-prod-igw"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2303658Z         }
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2303876Z       ^[[32m+^[[0m^[[0m tags_all = {
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2304165Z           ^[[32m+^[[0m^[[0m "Course"      = "ACS730"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2304689Z           ^[[32m+^[[0m^[[0m "Environment" = "prod"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2305006Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2305362Z           ^[[32m+^[[0m^[[0m "Name"        = "acs730-a1-aparna-prod-igw"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2305697Z           ^[[32m+^[[0m^[[0m "Owner"       = "aparna"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2305948Z         }
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2306182Z       ^[[32m+^[[0m^[[0m vpc_id   = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2306433Z     }
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2306532Z 
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2306712Z ^[[1m  # module.web.aws_route_table.public^[[0m will be created
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2307090Z ^[[0m  ^[[32m+^[[0m^[[0m resource "aws_route_table" "public" {
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2307435Z       ^[[32m+^[[0m^[[0m arn              = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2307781Z       ^[[32m+^[[0m^[[0m id               = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2308125Z       ^[[32m+^[[0m^[[0m owner_id         = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2308705Z       ^[[32m+^[[0m^[[0m propagating_vgws = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2309007Z       ^[[32m+^[[0m^[[0m route            = [
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2309262Z           ^[[32m+^[[0m^[[0m {
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2309704Z               ^[[32m+^[[0m^[[0m cidr_block                 = "0.0.0.0/0"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2310051Z               ^[[32m+^[[0m^[[0m gateway_id                 = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2310326Z                 ^[[90m# (11 unchanged attributes hidden)^[[0m^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2310509Z             },
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2310625Z         ]
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2310761Z       ^[[32m+^[[0m^[[0m tags             = {
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2310947Z           ^[[32m+^[[0m^[[0m "Environment" = "prod"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2311143Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2311378Z           ^[[32m+^[[0m^[[0m "Name"        = "acs730-a1-aparna-prod-public-rt"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2311562Z         }
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2311703Z       ^[[32m+^[[0m^[[0m tags_all         = {
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2312010Z           ^[[32m+^[[0m^[[0m "Course"      = "ACS730"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2312301Z           ^[[32m+^[[0m^[[0m "Environment" = "prod"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2312615Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2312875Z           ^[[32m+^[[0m^[[0m "Name"        = "acs730-a1-aparna-prod-public-rt"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2313096Z           ^[[32m+^[[0m^[[0m "Owner"       = "aparna"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2313248Z         }
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2313405Z       ^[[32m+^[[0m^[[0m vpc_id           = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2313566Z     }
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2313630Z 
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2313781Z ^[[1m  # module.web.aws_route_table_association.public["a"]^[[0m will be created
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2314059Z ^[[0m  ^[[32m+^[[0m^[[0m resource "aws_route_table_association" "public" {
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2314294Z       ^[[32m+^[[0m^[[0m id             = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2314504Z       ^[[32m+^[[0m^[[0m route_table_id = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2314719Z       ^[[32m+^[[0m^[[0m subnet_id      = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2314880Z     }
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2314943Z 
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2315079Z ^[[1m  # module.web.aws_route_table_association.public["b"]^[[0m will be created
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2315358Z ^[[0m  ^[[32m+^[[0m^[[0m resource "aws_route_table_association" "public" {
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2315584Z       ^[[32m+^[[0m^[[0m id             = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2315785Z       ^[[32m+^[[0m^[[0m route_table_id = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2315998Z       ^[[32m+^[[0m^[[0m subnet_id      = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2316154Z     }
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2316217Z 
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2316326Z ^[[1m  # module.web.aws_security_group.web^[[0m will be created
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2316560Z ^[[0m  ^[[32m+^[[0m^[[0m resource "aws_security_group" "web" {
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2316784Z       ^[[32m+^[[0m^[[0m arn                    = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2317019Z       ^[[32m+^[[0m^[[0m description            = "Web ingress for ACS"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2317350Z       ^[[32m+^[[0m^[[0m egress                 = [
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2317519Z           ^[[32m+^[[0m^[[0m {
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2317683Z               ^[[32m+^[[0m^[[0m cidr_blocks      = [
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2317869Z                   ^[[32m+^[[0m^[[0m "0.0.0.0/0",
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2318013Z                 ]
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2318184Z               ^[[32m+^[[0m^[[0m description      = "All outbound"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2318382Z               ^[[32m+^[[0m^[[0m from_port        = 0
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2318599Z               ^[[32m+^[[0m^[[0m ipv6_cidr_blocks = []
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2318888Z               ^[[32m+^[[0m^[[0m prefix_list_ids  = []
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2319188Z               ^[[32m+^[[0m^[[0m protocol         = "-1"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2319476Z               ^[[32m+^[[0m^[[0m security_groups  = []
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2319976Z               ^[[32m+^[[0m^[[0m self             = false
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2320278Z               ^[[32m+^[[0m^[[0m to_port          = 0
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2320620Z             },
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2320736Z         ]
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2320902Z       ^[[32m+^[[0m^[[0m id                     = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2321110Z       ^[[32m+^[[0m^[[0m ingress                = [
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2321286Z           ^[[32m+^[[0m^[[0m {
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2321446Z               ^[[32m+^[[0m^[[0m cidr_blocks      = [
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2321627Z                   ^[[32m+^[[0m^[[0m "0.0.0.0/0",
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2321777Z                 ]
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2337112Z               ^[[32m+^[[0m^[[0m description      = "HTTP from anywhere"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2337493Z               ^[[32m+^[[0m^[[0m from_port        = 80
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2337794Z               ^[[32m+^[[0m^[[0m ipv6_cidr_blocks = []
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2338089Z               ^[[32m+^[[0m^[[0m prefix_list_ids  = []
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2338390Z               ^[[32m+^[[0m^[[0m protocol         = "tcp"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2338698Z               ^[[32m+^[[0m^[[0m security_groups  = []
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2339003Z               ^[[32m+^[[0m^[[0m self             = false
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2339309Z               ^[[32m+^[[0m^[[0m to_port          = 80
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2339711Z             },
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2339893Z         ]
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2340209Z       ^[[32m+^[[0m^[[0m name                   = "acs730-a1-aparna-prod-web"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2340614Z       ^[[32m+^[[0m^[[0m name_prefix            = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2340993Z       ^[[32m+^[[0m^[[0m owner_id               = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2341339Z       ^[[32m+^[[0m^[[0m revoke_rules_on_delete = false
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2341654Z       ^[[32m+^[[0m^[[0m tags                   = {
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2341954Z           ^[[32m+^[[0m^[[0m "Environment" = "prod"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2342195Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2342423Z           ^[[32m+^[[0m^[[0m "Name"        = "acs730-a1-aparna-prod-web-sg"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2342613Z         }
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2342760Z       ^[[32m+^[[0m^[[0m tags_all               = {
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2342964Z           ^[[32m+^[[0m^[[0m "Course"      = "ACS730"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2343155Z           ^[[32m+^[[0m^[[0m "Environment" = "prod"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2343347Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2343570Z           ^[[32m+^[[0m^[[0m "Name"        = "acs730-a1-aparna-prod-web-sg"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2343787Z           ^[[32m+^[[0m^[[0m "Owner"       = "aparna"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2343937Z         }
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2344109Z       ^[[32m+^[[0m^[[0m vpc_id                 = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2344287Z     }
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2344349Z 
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2344473Z ^[[1m  # module.web.aws_subnet.public["a"]^[[0m will be created
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2344708Z ^[[0m  ^[[32m+^[[0m^[[0m resource "aws_subnet" "public" {
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2344958Z       ^[[32m+^[[0m^[[0m arn                                            = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2345228Z       ^[[32m+^[[0m^[[0m assign_ipv6_address_on_creation                = false
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2345508Z       ^[[32m+^[[0m^[[0m availability_zone                              = "us-east-1a"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2345974Z       ^[[32m+^[[0m^[[0m availability_zone_id                           = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2346259Z       ^[[32m+^[[0m^[[0m cidr_block                                     = "10.30.1.0/24"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2346520Z       ^[[32m+^[[0m^[[0m enable_dns64                                   = false
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2346782Z       ^[[32m+^[[0m^[[0m enable_resource_name_dns_a_record_on_launch    = false
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2347041Z       ^[[32m+^[[0m^[[0m enable_resource_name_dns_aaaa_record_on_launch = false
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2347305Z       ^[[32m+^[[0m^[[0m id                                             = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2347597Z       ^[[32m+^[[0m^[[0m ipv6_cidr_block_association_id                 = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2347874Z       ^[[32m+^[[0m^[[0m ipv6_native                                    = false
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2348210Z       ^[[32m+^[[0m^[[0m map_public_ip_on_launch                        = true
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2348489Z       ^[[32m+^[[0m^[[0m owner_id                                       = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2348784Z       ^[[32m+^[[0m^[[0m private_dns_hostname_type_on_launch            = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2349053Z       ^[[32m+^[[0m^[[0m tags                                           = {
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2349274Z           ^[[32m+^[[0m^[[0m "Environment" = "prod"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2349468Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2349877Z           ^[[32m+^[[0m^[[0m "Name"        = "acs730-a1-aparna-prod-public-a"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2350058Z         }
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2350225Z       ^[[32m+^[[0m^[[0m tags_all                                       = {
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2350434Z           ^[[32m+^[[0m^[[0m "Course"      = "ACS730"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2350626Z           ^[[32m+^[[0m^[[0m "Environment" = "prod"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2350823Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2351054Z           ^[[32m+^[[0m^[[0m "Name"        = "acs730-a1-aparna-prod-public-a"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2351269Z           ^[[32m+^[[0m^[[0m "Owner"       = "aparna"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2351421Z         }
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2351611Z       ^[[32m+^[[0m^[[0m vpc_id                                         = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2351800Z     }
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2351865Z 
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2351982Z ^[[1m  # module.web.aws_subnet.public["b"]^[[0m will be created
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2352208Z ^[[0m  ^[[32m+^[[0m^[[0m resource "aws_subnet" "public" {
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2352450Z       ^[[32m+^[[0m^[[0m arn                                            = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2352714Z       ^[[32m+^[[0m^[[0m assign_ipv6_address_on_creation                = false
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2352985Z       ^[[32m+^[[0m^[[0m availability_zone                              = "us-east-1b"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2353274Z       ^[[32m+^[[0m^[[0m availability_zone_id                           = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2353564Z       ^[[32m+^[[0m^[[0m cidr_block                                     = "10.30.2.0/24"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2353817Z       ^[[32m+^[[0m^[[0m enable_dns64                                   = false
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2354067Z       ^[[32m+^[[0m^[[0m enable_resource_name_dns_a_record_on_launch    = false
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2354336Z       ^[[32m+^[[0m^[[0m enable_resource_name_dns_aaaa_record_on_launch = false
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2354597Z       ^[[32m+^[[0m^[[0m id                                             = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2354877Z       ^[[32m+^[[0m^[[0m ipv6_cidr_block_association_id                 = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2355156Z       ^[[32m+^[[0m^[[0m ipv6_native                                    = false
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2355402Z       ^[[32m+^[[0m^[[0m map_public_ip_on_launch                        = true
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2355666Z       ^[[32m+^[[0m^[[0m owner_id                                       = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2356062Z       ^[[32m+^[[0m^[[0m private_dns_hostname_type_on_launch            = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2356330Z       ^[[32m+^[[0m^[[0m tags                                           = {
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2356538Z           ^[[32m+^[[0m^[[0m "Environment" = "prod"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2356736Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2356959Z           ^[[32m+^[[0m^[[0m "Name"        = "acs730-a1-aparna-prod-public-b"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2357141Z         }
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2357315Z       ^[[32m+^[[0m^[[0m tags_all                                       = {
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2357523Z           ^[[32m+^[[0m^[[0m "Course"      = "ACS730"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2357710Z           ^[[32m+^[[0m^[[0m "Environment" = "prod"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2357903Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2358131Z           ^[[32m+^[[0m^[[0m "Name"        = "acs730-a1-aparna-prod-public-b"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2358346Z           ^[[32m+^[[0m^[[0m "Owner"       = "aparna"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2358589Z         }
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2358786Z       ^[[32m+^[[0m^[[0m vpc_id                                         = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2358972Z     }
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2359036Z 
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2359129Z ^[[1m  # module.web.aws_vpc.main^[[0m will be created
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2359341Z ^[[0m  ^[[32m+^[[0m^[[0m resource "aws_vpc" "main" {
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2359699Z       ^[[32m+^[[0m^[[0m arn                                  = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2359944Z       ^[[32m+^[[0m^[[0m cidr_block                           = "10.30.0.0/16"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2360201Z       ^[[32m+^[[0m^[[0m default_network_acl_id               = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2360473Z       ^[[32m+^[[0m^[[0m default_route_table_id               = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2360740Z       ^[[32m+^[[0m^[[0m default_security_group_id            = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2361010Z       ^[[32m+^[[0m^[[0m dhcp_options_id                      = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2361263Z       ^[[32m+^[[0m^[[0m enable_dns_hostnames                 = true
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2361488Z       ^[[32m+^[[0m^[[0m enable_dns_support                   = true
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2361748Z       ^[[32m+^[[0m^[[0m enable_network_address_usage_metrics = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2362005Z       ^[[32m+^[[0m^[[0m id                                   = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2362241Z       ^[[32m+^[[0m^[[0m instance_tenancy                     = "default"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2362497Z       ^[[32m+^[[0m^[[0m ipv6_association_id                  = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2362757Z       ^[[32m+^[[0m^[[0m ipv6_cidr_block                      = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2363022Z       ^[[32m+^[[0m^[[0m ipv6_cidr_block_network_border_group = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2363291Z       ^[[32m+^[[0m^[[0m main_route_table_id                  = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2363546Z       ^[[32m+^[[0m^[[0m owner_id                             = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2363783Z       ^[[32m+^[[0m^[[0m tags                                 = {
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2363989Z           ^[[32m+^[[0m^[[0m "Environment" = "prod"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2364181Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2364403Z           ^[[32m+^[[0m^[[0m "Name"        = "acs730-a1-aparna-prod-vpc"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2364579Z         }
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2364742Z       ^[[32m+^[[0m^[[0m tags_all                             = {
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2364939Z           ^[[32m+^[[0m^[[0m "Course"      = "ACS730"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2365125Z           ^[[32m+^[[0m^[[0m "Environment" = "prod"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2365320Z           ^[[32m+^[[0m^[[0m "Managed"     = "terraform"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2365538Z           ^[[32m+^[[0m^[[0m "Name"        = "acs730-a1-aparna-prod-vpc"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2365747Z           ^[[32m+^[[0m^[[0m "Owner"       = "aparna"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2365900Z         }
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2366006Z     }
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2366312Z 
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2366456Z ^[[1mPlan:^[[0m 10 to add, 0 to change, 0 to destroy.
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2366731Z ^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2366905Z Changes to Outputs:
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2367172Z   ^[[32m+^[[0m^[[0m instance_id = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.2367463Z   ^[[32m+^[[0m^[[0m web_url     = (known after apply)
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:36.6789194Z ^[[0m^[[1mmodule.web.aws_vpc.main: Creating...^[[0m^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:46.6792807Z ^[[0m^[[1mmodule.web.aws_vpc.main: Still creating... [10s elapsed]^[[0m^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:49.2352709Z ^[[0m^[[1mmodule.web.aws_vpc.main: Creation complete after 12s [id=vpc-0da0e07a193d6c2c4]^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:49.2384846Z ^[[0m^[[1mmodule.web.aws_internet_gateway.main: Creating...^[[0m^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:49.2385327Z ^[[0m^[[1mmodule.web.aws_subnet.public["a"]: Creating...^[[0m^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:49.2392871Z ^[[0m^[[1mmodule.web.aws_subnet.public["b"]: Creating...^[[0m^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:49.2400610Z ^[[0m^[[1mmodule.web.aws_security_group.web: Creating...^[[0m^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:49.9427207Z ^[[0m^[[1mmodule.web.aws_internet_gateway.main: Creation complete after 1s [id=igw-08106e762d669b51c]^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:49.9448075Z ^[[0m^[[1mmodule.web.aws_route_table.public: Creating...^[[0m^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:51.1559318Z ^[[0m^[[1mmodule.web.aws_route_table.public: Creation complete after 1s [id=rtb-0c8775619cbe004ce]^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:52.3856292Z ^[[0m^[[1mmodule.web.aws_security_group.web: Creation complete after 3s [id=sg-0ce138ef88b051221]^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:59.2402735Z ^[[0m^[[1mmodule.web.aws_subnet.public["b"]: Still creating... [10s elapsed]^[[0m^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:46:59.2403137Z ^[[0m^[[1mmodule.web.aws_subnet.public["a"]: Still creating... [10s elapsed]^[[0m^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:47:00.6642088Z ^[[0m^[[1mmodule.web.aws_subnet.public["b"]: Creation complete after 12s [id=subnet-0add242e3f4669e92]^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:47:00.6690322Z ^[[0m^[[1mmodule.web.aws_subnet.public["a"]: Creation complete after 12s [id=subnet-0f0b12744563888eb]^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:47:00.6707289Z ^[[0m^[[1mmodule.web.aws_route_table_association.public["b"]: Creating...^[[0m^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:47:00.6708059Z ^[[0m^[[1mmodule.web.aws_route_table_association.public["a"]: Creating...^[[0m^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:47:01.1401762Z ^[[0m^[[1mmodule.web.aws_route_table_association.public["a"]: Creation complete after 0s [id=rtbassoc-070bb4450ef17cd8b]^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:47:01.1861319Z ^[[0m^[[1mmodule.web.aws_route_table_association.public["b"]: Creation complete after 0s [id=rtbassoc-06cf60ea25d5e3927]^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:47:01.1903944Z ^[[0m^[[1mmodule.web.aws_instance.web: Creating...^[[0m^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:47:11.1947979Z ^[[0m^[[1mmodule.web.aws_instance.web: Still creating... [10s elapsed]^[[0m^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:47:15.0213331Z ^[[0m^[[1mmodule.web.aws_instance.web: Creation complete after 14s [id=i-041724638e58e94f3]^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:47:15.4047189Z ^[[0m^[[1mmodule.web.aws_cloudwatch_metric_alarm.cpu_high: Creating...^[[0m^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:47:16.0134955Z ^[[0m^[[1mmodule.web.aws_cloudwatch_metric_alarm.cpu_high: Creation complete after 1s [id=acs730-a1-aparna-prod-cpu-high]^[[0m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:47:16.3063365Z ^[[0m^[[1m^[[32m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:47:16.3069937Z Apply complete! Resources: 10 added, 0 changed, 0 destroyed.
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:47:16.3070299Z ^[[0m^[[0m^[[1m^[[32m
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:47:16.3070426Z Outputs:
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:47:16.3070497Z 
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:47:16.3070588Z ^[[0minstance_id = "i-041724638e58e94f3"
+apply-prod	Run terraform apply -input=false -auto-approve	2026-11-27T04:47:16.3070801Z web_url = "http://98.80.183.156/"
+apply-prod	Post Run aws-actions/configure-aws-credentials@v4	﻿2026-11-27T04:47:16.3238679Z Post job cleanup.
+apply-prod	Post Run actions/checkout@v4	﻿2026-11-27T04:47:16.3939155Z Post job cleanup.
+apply-prod	Post Run actions/checkout@v4	2026-11-27T04:47:16.4521327Z [command]/usr/bin/git version
+apply-prod	Post Run actions/checkout@v4	2026-11-27T04:47:16.4554817Z git version 2.56.1
+apply-prod	Post Run actions/checkout@v4	2026-11-27T04:47:16.4578628Z Temporarily overriding HOME='/home/runner/work/_temp/6e681bee-6ef6-4c27-a51a-e68f004f030f' before making global git config changes
+apply-prod	Post Run actions/checkout@v4	2026-11-27T04:47:16.4579451Z Adding repository directory to the temporary git global config as a safe directory
+apply-prod	Post Run actions/checkout@v4	2026-11-27T04:47:16.4584193Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/acs730/acs730
+apply-prod	Post Run actions/checkout@v4	2026-11-27T04:47:16.4613435Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+apply-prod	Post Run actions/checkout@v4	2026-11-27T04:47:16.4641085Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+apply-prod	Post Run actions/checkout@v4	2026-11-27T04:47:16.4900869Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+apply-prod	Post Run actions/checkout@v4	2026-11-27T04:47:16.4930300Z http.https://github.com/.extraheader
+apply-prod	Post Run actions/checkout@v4	2026-11-27T04:47:16.4938020Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+apply-prod	Post Run actions/checkout@v4	2026-11-27T04:47:16.4972067Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+apply-prod	Post Run actions/checkout@v4	2026-11-27T04:47:16.5228371Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+apply-prod	Post Run actions/checkout@v4	2026-11-27T04:47:16.5255178Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+apply-prod	Complete job	﻿2026-11-27T04:47:16.5590625Z Cleaning up orphan processes
+apply-prod	Complete job	2026-11-27T04:47:16.5870554Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, aws-actions/configure-aws-credentials@v4, hashicorp/setup-terraform@v3. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

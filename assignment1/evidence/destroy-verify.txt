@@ -1,0 +1,41 @@
+== state staging
+== state prod
+module.web.data.aws_ami.al2023
+module.web.data.aws_availability_zones.available
+module.web.data.aws_ssm_parameter.db_password
+module.web.aws_cloudwatch_metric_alarm.cpu_high
+module.web.aws_instance.web
+module.web.aws_internet_gateway.main
+module.web.aws_route_table.public
+module.web.aws_route_table_association.public["a"]
+module.web.aws_route_table_association.public["b"]
+module.web.aws_security_group.web
+module.web.aws_subnet.public["a"]
+module.web.aws_subnet.public["b"]
+module.web.aws_vpc.main
+== instances
+i-041724638e58e94f3
+== alarms
+acs730-a1-aparna-prod-cpu-high
+
+== EC2 instances
+   i-0f1e4425d686ab24f  running  t3.micro  acs730-workstation   (your workstation -- keep this)
+   i-041724638e58e94f3  running  t3.micro  acs730-a1-aparna-prod-web
+      -> aws ec2 terminate-instances --instance-ids i-041724638e58e94f3
+
+== Your AMIs (and their snapshots)
+
+== Unattached EBS volumes
+
+== Snapshots you own
+
+== Non-default security groups
+   sg-0ce138ef88b051221  acs730-a1-aparna-prod-web
+      -> aws ec2 delete-security-group --group-id sg-0ce138ef88b051221
+   sg-0029cc172192d1c4c  launch-wizard-1
+      -> aws ec2 delete-security-group --group-id sg-0029cc172192d1c4c
+
+== Terraform state files that still track resources
+
+Review the items above. This script deleted nothing.
+
