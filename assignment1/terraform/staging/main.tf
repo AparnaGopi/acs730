@@ -15,6 +15,7 @@ module "web" {
   environment                = "staging"
   owner                      = "aparna"
   instance_type              = "t3.micro"
+  cpu_alarm_threshold        = 70
   db_password_parameter_name = "/acs730/assignment1/staging/db_password"
   vpc_cidr                   = "10.20.0.0/16"
 
