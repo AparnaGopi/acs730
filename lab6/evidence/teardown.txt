@@ -1,0 +1,67 @@
+  [31m-[0m[0m web_instance_ids    = [
+      [31m-[0m[0m "i-0d01d69abfdf4d2a3",
+      [31m-[0m[0m "i-0fe89bd2d303282ce",
+    ] [90m-> null[0m[0m
+  [31m-[0m[0m web_public_ips      = [
+      [31m-[0m[0m "54.221.190.207",
+      [31m-[0m[0m "54.237.222.16",
+    ] [90m-> null[0m[0m
+
+You can apply this plan to save these new output values to the Terraform
+state, without changing any real infrastructure.
+[0m[1m
+Do you really want to destroy all resources?[0m
+  Terraform will destroy all your managed infrastructure, as shown above.
+  There is no undo. Only 'yes' will be accepted to confirm.
+
+  [1mEnter a value:[0m [0m
+[0m[1m[32m
+Destroy complete! Resources: 0 destroyed.
+[0msnapshot behind the AMI: snap-010b1b5470cd5e78c
+{
+    "Return": true,
+    "DeleteSnapshotResults": []
+}
+remove_bucket: acs730-lab6-ssm-532264255350
+
+== EC2 instances
+   i-0f1e4425d686ab24f  running  t3.micro  acs730-workstation   (your workstation -- keep this)
+   i-025bdde869e00de84  running  t3.micro  acs730-lab6-web-1
+      -> aws ec2 terminate-instances --instance-ids i-025bdde869e00de84
+   i-03f599e6064466bd5  running  t3.micro  acs730-lab6-web-0
+      -> aws ec2 terminate-instances --instance-ids i-03f599e6064466bd5
+
+== Your AMIs (and their snapshots)
+
+== Unattached EBS volumes
+
+== Snapshots you own
+
+== Non-default security groups
+   sg-0e69e2ba7f870fa95  acs730-lab6-sg
+      -> aws ec2 delete-security-group --group-id sg-0e69e2ba7f870fa95
+   sg-0029cc172192d1c4c  launch-wizard-1
+      -> aws ec2 delete-security-group --group-id sg-0029cc172192d1c4c
+
+== Terraform state files that still track resources
+
+Review the items above. This script deleted nothing.
+
+
+== EC2 instances
+   i-0f1e4425d686ab24f  running  t3.micro  acs730-workstation   (your workstation -- keep this)
+
+== Your AMIs (and their snapshots)
+
+== Unattached EBS volumes
+
+== Snapshots you own
+
+== Non-default security groups
+   sg-0029cc172192d1c4c  launch-wizard-1
+      -> aws ec2 delete-security-group --group-id sg-0029cc172192d1c4c
+
+== Terraform state files that still track resources
+
+Review the items above. This script deleted nothing.
+
