@@ -12,10 +12,11 @@ provider "aws" {
 module "web" {
   source = "../modules/web"
 
-  environment   = "dev"
-  owner         = "aparna"
-  instance_type = "t3.micro"
-  vpc_cidr      = "10.10.0.0/16"
+  environment                = "dev"
+  owner                      = "aparna"
+  instance_type              = "t3.micro"
+  db_password_parameter_name = "/acs730/assignment1/dev/db_password"
+  vpc_cidr                   = "10.10.0.0/16"
 
   public_subnets = {
     a = { cidr_block = "10.10.1.0/24", az_index = 0 }

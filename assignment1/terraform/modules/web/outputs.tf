@@ -18,3 +18,11 @@ output "instance_id" {
   description = "Id of the web server instance."
   value       = aws_instance.web.id
 }
+output "cpu_alarm_name" {
+  description = "Name of the CPU alarm."
+  value       = aws_cloudwatch_metric_alarm.cpu_high.alarm_name
+}
+output "db_password_parameter_version" {
+  description = "Version of the secret that was read (not its value)."
+  value       = data.aws_ssm_parameter.db_password.version
+}

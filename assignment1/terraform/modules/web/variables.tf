@@ -59,3 +59,14 @@ variable "instance_type" {
     error_message = "Stay small: t3.micro or t3.small. The term budget is $50 in total."
   }
 }
+
+variable "db_password_parameter_name" {
+  description = "Name of the SSM SecureString holding the database password."
+  type        = string
+}
+
+variable "cpu_alarm_threshold" {
+  description = "Average CPU percentage that triggers the alarm."
+  type        = number
+  default     = 80
+}
