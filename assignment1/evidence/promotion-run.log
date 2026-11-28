@@ -1,0 +1,644 @@
+validate	UNKNOWN STEP	﻿2026-11-27T04:56:12.6557024Z Current runner version: '2.338.2'
+validate	UNKNOWN STEP	2026-11-27T04:56:12.6583090Z ##[group]Runner Image Provisioner
+validate	UNKNOWN STEP	2026-11-27T04:56:12.6584111Z Hosted Compute Agent
+validate	UNKNOWN STEP	2026-11-27T04:56:12.6584727Z Version: 20261111.635
+validate	UNKNOWN STEP	2026-11-27T04:56:12.6585482Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+validate	UNKNOWN STEP	2026-11-27T04:56:12.6586262Z Build Date: 2026-11-11T01:49:01Z
+validate	UNKNOWN STEP	2026-11-27T04:56:12.6587035Z Worker ID: {4a6b2b52-9136-4e2a-92ae-406b687af0ab}
+validate	UNKNOWN STEP	2026-11-27T04:56:12.6587785Z Region: eastus
+validate	UNKNOWN STEP	2026-11-27T04:56:12.6588347Z Cloud: Azure
+validate	UNKNOWN STEP	2026-11-27T04:56:12.6589033Z ##[endgroup]
+validate	UNKNOWN STEP	2026-11-27T04:56:12.6590900Z ##[group]Operating System
+validate	UNKNOWN STEP	2026-11-27T04:56:12.6591727Z Ubuntu
+validate	UNKNOWN STEP	2026-11-27T04:56:12.6592278Z 26.04.1
+validate	UNKNOWN STEP	2026-11-27T04:56:12.6592797Z LTS
+validate	UNKNOWN STEP	2026-11-27T04:56:12.6593437Z ##[endgroup]
+validate	UNKNOWN STEP	2026-11-27T04:56:12.6594003Z ##[group]Runner Image
+validate	UNKNOWN STEP	2026-11-27T04:56:12.6594653Z Image: ubuntu-26.04
+validate	UNKNOWN STEP	2026-11-27T04:56:12.6595253Z Version: 20261116.202.1
+validate	UNKNOWN STEP	2026-11-27T04:56:12.6597047Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261116.202/images/ubuntu/Ubuntu2604-Readme.md
+validate	UNKNOWN STEP	2026-11-27T04:56:12.6598687Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261116.202
+validate	UNKNOWN STEP	2026-11-27T04:56:12.6599921Z ##[endgroup]
+validate	UNKNOWN STEP	2026-11-27T04:56:12.6601064Z ##[group]GITHUB_TOKEN Permissions
+validate	UNKNOWN STEP	2026-11-27T04:56:12.6603353Z Contents: read
+validate	UNKNOWN STEP	2026-11-27T04:56:12.6604010Z Metadata: read
+validate	UNKNOWN STEP	2026-11-27T04:56:12.6604693Z ##[endgroup]
+validate	UNKNOWN STEP	2026-11-27T04:56:12.6606956Z Secret source: Actions
+validate	UNKNOWN STEP	2026-11-27T04:56:12.6608200Z Cache mode: write
+validate	UNKNOWN STEP	2026-11-27T04:56:12.6609185Z Prepare workflow directory
+validate	UNKNOWN STEP	2026-11-27T04:56:12.7013485Z Prepare all required actions
+validate	UNKNOWN STEP	2026-11-27T04:56:12.7062131Z Getting action download info
+validate	UNKNOWN STEP	2026-11-27T04:56:12.8666398Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+validate	UNKNOWN STEP	2026-11-27T04:56:12.9716672Z Download action repository 'hashicorp/setup-terraform@v3' (SHA:b9cd54a3c349d3f38e8881555d616ced269862dd)
+validate	UNKNOWN STEP	2026-11-27T04:56:13.1923940Z Complete job name: validate
+validate	UNKNOWN STEP	2026-11-27T04:56:13.2840635Z ##[group]Run actions/checkout@v4
+validate	UNKNOWN STEP	2026-11-27T04:56:13.2841652Z with:
+validate	UNKNOWN STEP	2026-11-27T04:56:13.2842130Z   repository: AparnaGopi/acs730
+validate	UNKNOWN STEP	2026-11-27T04:56:13.2846137Z   token: ***
+validate	UNKNOWN STEP	2026-11-27T04:56:13.2846600Z   ssh-strict: true
+validate	UNKNOWN STEP	2026-11-27T04:56:13.2847125Z   ssh-user: git
+validate	UNKNOWN STEP	2026-11-27T04:56:13.2847608Z   persist-credentials: true
+validate	UNKNOWN STEP	2026-11-27T04:56:13.2848120Z   clean: true
+validate	UNKNOWN STEP	2026-11-27T04:56:13.2848587Z   sparse-checkout-cone-mode: true
+validate	UNKNOWN STEP	2026-11-27T04:56:13.2849142Z   fetch-depth: 1
+validate	UNKNOWN STEP	2026-11-27T04:56:13.2849744Z   fetch-tags: false
+validate	UNKNOWN STEP	2026-11-27T04:56:13.2850217Z   show-progress: true
+validate	UNKNOWN STEP	2026-11-27T04:56:13.2850689Z   lfs: false
+validate	UNKNOWN STEP	2026-11-27T04:56:13.2851123Z   submodules: false
+validate	UNKNOWN STEP	2026-11-27T04:56:13.2851593Z   set-safe-directory: true
+validate	UNKNOWN STEP	2026-11-27T04:56:13.2852119Z   allow-unsafe-pr-checkout: false
+validate	UNKNOWN STEP	2026-11-27T04:56:13.2852909Z env:
+validate	UNKNOWN STEP	2026-11-27T04:56:13.2853353Z   TF_IN_AUTOMATION: true
+validate	UNKNOWN STEP	2026-11-27T04:56:13.2853841Z ##[endgroup]
+validate	UNKNOWN STEP	2026-11-27T04:56:13.5978197Z Syncing repository: AparnaGopi/acs730
+validate	UNKNOWN STEP	2026-11-27T04:56:13.5981671Z ##[group]Getting Git version info
+validate	UNKNOWN STEP	2026-11-27T04:56:13.5982536Z Working directory is '/home/runner/work/acs730/acs730'
+validate	UNKNOWN STEP	2026-11-27T04:56:13.5984416Z [command]/usr/bin/git version
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6017198Z git version 2.56.1
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6046271Z ##[endgroup]
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6069346Z Temporarily overriding HOME='/home/runner/work/_temp/47b0b3a9-3f22-4f59-a44b-3cf34f1559e8' before making global git config changes
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6072257Z Adding repository directory to the temporary git global config as a safe directory
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6073535Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/acs730/acs730
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6166878Z Deleting the contents of '/home/runner/work/acs730/acs730'
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6174168Z ##[group]Initializing the repository
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6175868Z [command]/usr/bin/git init /home/runner/work/acs730/acs730
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6308924Z hint: Using 'master' as the name for the initial branch. This default branch name
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6311178Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6313262Z hint: to use in all of your new repositories, which will suppress this warning,
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6314694Z hint: call:
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6315399Z hint:
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6316282Z hint: 	git config --global init.defaultBranch <name>
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6317448Z hint:
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6318557Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6321424Z hint: 'development'. The just-created branch can be renamed via this command:
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6322878Z hint:
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6323623Z hint: 	git branch -m <name>
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6324551Z hint:
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6326178Z hint: Disable this message with "git config set advice.defaultBranchName false"
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6350744Z Initialized empty Git repository in /home/runner/work/acs730/acs730/.git/
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6382414Z [command]/usr/bin/git remote add origin https://github.com/AparnaGopi/acs730
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6463874Z ##[endgroup]
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6464978Z ##[group]Disabling automatic garbage collection
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6465825Z [command]/usr/bin/git config --local gc.auto 0
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6520010Z ##[endgroup]
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6522109Z ##[group]Setting up auth
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6524043Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+validate	UNKNOWN STEP	2026-11-27T04:56:13.6576732Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+validate	UNKNOWN STEP	2026-11-27T04:56:13.7186672Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+validate	UNKNOWN STEP	2026-11-27T04:56:13.7225247Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+validate	UNKNOWN STEP	2026-11-27T04:56:13.7525698Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+validate	UNKNOWN STEP	2026-11-27T04:56:13.7570236Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+validate	UNKNOWN STEP	2026-11-27T04:56:13.7870297Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+validate	UNKNOWN STEP	2026-11-27T04:56:13.7912084Z ##[endgroup]
+validate	UNKNOWN STEP	2026-11-27T04:56:13.7913810Z ##[group]Fetching the repository
+validate	UNKNOWN STEP	2026-11-27T04:56:13.7923081Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +a64a99d208e588b558260ded49f38e99b13fe53d:refs/remotes/origin/main
+validate	UNKNOWN STEP	2026-11-27T04:56:14.2861519Z From https://github.com/AparnaGopi/acs730
+validate	UNKNOWN STEP	2026-11-27T04:56:14.2864541Z  * [new ref]         a64a99d208e588b558260ded49f38e99b13fe53d -> origin/main
+validate	UNKNOWN STEP	2026-11-27T04:56:14.2870241Z ##[endgroup]
+validate	UNKNOWN STEP	2026-11-27T04:56:14.2872479Z ##[group]Determining the checkout info
+validate	UNKNOWN STEP	2026-11-27T04:56:14.2875057Z ##[endgroup]
+validate	UNKNOWN STEP	2026-11-27T04:56:14.2877956Z [command]/usr/bin/git sparse-checkout disable
+validate	UNKNOWN STEP	2026-11-27T04:56:14.2937093Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+validate	UNKNOWN STEP	2026-11-27T04:56:14.2971291Z ##[group]Checking out the ref
+validate	UNKNOWN STEP	2026-11-27T04:56:14.2976004Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+validate	UNKNOWN STEP	2026-11-27T04:56:14.3315950Z Switched to a new branch 'main'
+validate	UNKNOWN STEP	2026-11-27T04:56:14.3324335Z branch 'main' set up to track 'origin/main'.
+validate	UNKNOWN STEP	2026-11-27T04:56:14.3331697Z ##[endgroup]
+validate	UNKNOWN STEP	2026-11-27T04:56:14.3382657Z [command]/usr/bin/git log -1 --format=%H
+validate	UNKNOWN STEP	2026-11-27T04:56:14.3409174Z a64a99d208e588b558260ded49f38e99b13fe53d
+validate	UNKNOWN STEP	2026-11-27T04:56:14.3730352Z ##[group]Run hashicorp/setup-terraform@v3
+validate	UNKNOWN STEP	2026-11-27T04:56:14.3731801Z with:
+validate	UNKNOWN STEP	2026-11-27T04:56:14.3732783Z   terraform_version: 1.10.3
+validate	UNKNOWN STEP	2026-11-27T04:56:14.3733985Z   terraform_wrapper: false
+validate	UNKNOWN STEP	2026-11-27T04:56:14.3735331Z   cli_config_credentials_hostname: app.terraform.io
+validate	UNKNOWN STEP	2026-11-27T04:56:14.3736797Z env:
+validate	UNKNOWN STEP	2026-11-27T04:56:14.3737740Z   TF_IN_AUTOMATION: true
+validate	UNKNOWN STEP	2026-11-27T04:56:14.3739101Z ##[endgroup]
+validate	UNKNOWN STEP	2026-11-27T04:56:14.5362244Z (node:2455) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+validate	UNKNOWN STEP	2026-11-27T04:56:14.5367779Z (Use `node --trace-deprecation ...` to show where the warning was created)
+validate	UNKNOWN STEP	2026-11-27T04:56:14.7915407Z [command]/usr/bin/unzip -o -q /home/runner/work/_temp/ad242ccf-b060-457a-89f6-7ceaf84eb002
+validate	UNKNOWN STEP	2026-11-27T04:56:15.3857912Z ##[group]Run terraform fmt -check -recursive assignment1/terraform
+validate	UNKNOWN STEP	2026-11-27T04:56:15.3858549Z ^[[36;1mterraform fmt -check -recursive assignment1/terraform^[[0m
+validate	UNKNOWN STEP	2026-11-27T04:56:15.3897462Z shell: /usr/bin/bash -e {0}
+validate	UNKNOWN STEP	2026-11-27T04:56:15.3897744Z env:
+validate	UNKNOWN STEP	2026-11-27T04:56:15.3897971Z   TF_IN_AUTOMATION: true
+validate	UNKNOWN STEP	2026-11-27T04:56:15.3898247Z ##[endgroup]
+validate	UNKNOWN STEP	2026-11-27T04:56:15.4581206Z ##[group]Run for env in dev staging prod; do
+validate	UNKNOWN STEP	2026-11-27T04:56:15.4581628Z ^[[36;1mfor env in dev staging prod; do^[[0m
+validate	UNKNOWN STEP	2026-11-27T04:56:15.4582121Z ^[[36;1m  terraform -chdir=assignment1/terraform/$env init -backend=false -input=false^[[0m
+validate	UNKNOWN STEP	2026-11-27T04:56:15.4582644Z ^[[36;1m  terraform -chdir=assignment1/terraform/$env validate^[[0m
+validate	UNKNOWN STEP	2026-11-27T04:56:15.4582968Z ^[[36;1mdone^[[0m
+validate	UNKNOWN STEP	2026-11-27T04:56:15.4616291Z shell: /usr/bin/bash -e {0}
+validate	UNKNOWN STEP	2026-11-27T04:56:15.4616556Z env:
+validate	UNKNOWN STEP	2026-11-27T04:56:15.4616759Z   TF_IN_AUTOMATION: true
+validate	UNKNOWN STEP	2026-11-27T04:56:15.4616997Z ##[endgroup]
+validate	UNKNOWN STEP	2026-11-27T04:56:15.4946831Z ^[[0m^[[1mInitializing modules...^[[0m
+validate	UNKNOWN STEP	2026-11-27T04:56:15.4985173Z - web in ../modules/web
+validate	UNKNOWN STEP	2026-11-27T04:56:15.4994433Z ^[[0m^[[1mInitializing provider plugins...^[[0m
+validate	UNKNOWN STEP	2026-11-27T04:56:15.4995322Z - Reusing previous version of hashicorp/aws from the dependency lock file
+validate	UNKNOWN STEP	2026-11-27T04:56:15.5995426Z - Installing hashicorp/aws v5.100.0...
+validate	UNKNOWN STEP	2026-11-27T04:56:22.2120965Z - Installed hashicorp/aws v5.100.0 (signed by HashiCorp)
+validate	UNKNOWN STEP	2026-11-27T04:56:22.2121398Z 
+validate	UNKNOWN STEP	2026-11-27T04:56:22.2121931Z ^[[0m^[[1m^[[32mTerraform has been successfully initialized!^[[0m^[[32m^[[0m
+validate	UNKNOWN STEP	2026-11-27T04:56:24.3636668Z ^[[32m^[[1mSuccess!^[[0m The configuration is valid.
+validate	UNKNOWN STEP	2026-11-27T04:56:24.3637311Z ^[[0m
+validate	UNKNOWN STEP	2026-11-27T04:56:24.4017061Z ^[[0m^[[1mInitializing modules...^[[0m
+validate	UNKNOWN STEP	2026-11-27T04:56:24.4037432Z - web in ../modules/web
+validate	UNKNOWN STEP	2026-11-27T04:56:24.4048170Z ^[[0m^[[1mInitializing provider plugins...^[[0m
+validate	UNKNOWN STEP	2026-11-27T04:56:24.4049076Z - Reusing previous version of hashicorp/aws from the dependency lock file
+validate	UNKNOWN STEP	2026-11-27T04:56:24.5971355Z - Installing hashicorp/aws v5.100.0...
+validate	UNKNOWN STEP	2026-11-27T04:56:31.2032435Z - Installed hashicorp/aws v5.100.0 (signed by HashiCorp)
+validate	UNKNOWN STEP	2026-11-27T04:56:31.2033018Z 
+validate	UNKNOWN STEP	2026-11-27T04:56:31.2033926Z ^[[0m^[[1m^[[32mTerraform has been successfully initialized!^[[0m^[[32m^[[0m
+validate	UNKNOWN STEP	2026-11-27T04:56:33.3430989Z ^[[32m^[[1mSuccess!^[[0m The configuration is valid.
+validate	UNKNOWN STEP	2026-11-27T04:56:33.3440278Z ^[[0m
+validate	UNKNOWN STEP	2026-11-27T04:56:33.3807101Z ^[[0m^[[1mInitializing modules...^[[0m
+validate	UNKNOWN STEP	2026-11-27T04:56:33.3828399Z - web in ../modules/web
+validate	UNKNOWN STEP	2026-11-27T04:56:33.3838176Z ^[[0m^[[1mInitializing provider plugins...^[[0m
+validate	UNKNOWN STEP	2026-11-27T04:56:33.3839148Z - Reusing previous version of hashicorp/aws from the dependency lock file
+validate	UNKNOWN STEP	2026-11-27T04:56:33.4838694Z - Installing hashicorp/aws v5.100.0...
+validate	UNKNOWN STEP	2026-11-27T04:56:40.1417240Z - Installed hashicorp/aws v5.100.0 (signed by HashiCorp)
+validate	UNKNOWN STEP	2026-11-27T04:56:40.1417798Z 
+validate	UNKNOWN STEP	2026-11-27T04:56:40.1418460Z ^[[0m^[[1m^[[32mTerraform has been successfully initialized!^[[0m^[[32m^[[0m
+validate	UNKNOWN STEP	2026-11-27T04:56:42.2874869Z ^[[32m^[[1mSuccess!^[[0m The configuration is valid.
+validate	UNKNOWN STEP	2026-11-27T04:56:42.2880667Z ^[[0m
+validate	UNKNOWN STEP	2026-11-27T04:56:42.3119043Z Post job cleanup.
+validate	UNKNOWN STEP	2026-11-27T04:56:42.4000437Z [command]/usr/bin/git version
+validate	UNKNOWN STEP	2026-11-27T04:56:42.4050512Z git version 2.56.1
+validate	UNKNOWN STEP	2026-11-27T04:56:42.4098115Z Temporarily overriding HOME='/home/runner/work/_temp/4076ccca-4fdb-4948-b0a5-983f3c418f15' before making global git config changes
+validate	UNKNOWN STEP	2026-11-27T04:56:42.4100334Z Adding repository directory to the temporary git global config as a safe directory
+validate	UNKNOWN STEP	2026-11-27T04:56:42.4104417Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/acs730/acs730
+validate	UNKNOWN STEP	2026-11-27T04:56:42.4152483Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+validate	UNKNOWN STEP	2026-11-27T04:56:42.4195781Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+validate	UNKNOWN STEP	2026-11-27T04:56:42.4555689Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+validate	UNKNOWN STEP	2026-11-27T04:56:42.4585020Z http.https://github.com/.extraheader
+validate	UNKNOWN STEP	2026-11-27T04:56:42.4598139Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+validate	UNKNOWN STEP	2026-11-27T04:56:42.4642574Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+validate	UNKNOWN STEP	2026-11-27T04:56:42.4964914Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+validate	UNKNOWN STEP	2026-11-27T04:56:42.5004058Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+validate	UNKNOWN STEP	2026-11-27T04:56:42.5494018Z Cleaning up orphan processes
+validate	UNKNOWN STEP	2026-11-27T04:56:42.5910120Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, hashicorp/setup-terraform@v3. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+apply-staging	UNKNOWN STEP	﻿2026-11-27T04:56:46.7304449Z Current runner version: '2.338.2'
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.7330786Z ##[group]Runner Image Provisioner
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.7331976Z Hosted Compute Agent
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.7332783Z Version: 20261111.635
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.7333538Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.7334317Z Build Date: 2026-11-11T01:49:01Z
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.7335206Z Worker ID: {cc6405f5-7bef-44c3-b8ef-a95a18fdcd67}
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.7335970Z Region: northcentralus
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.7337021Z Cloud: Azure
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.7337672Z ##[endgroup]
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.7339413Z ##[group]Operating System
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.7340195Z Ubuntu
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.7340771Z 26.04.1
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.7341789Z LTS
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.7342397Z ##[endgroup]
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.7343103Z ##[group]Runner Image
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.7343815Z Image: ubuntu-26.04
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.7344430Z Version: 20261116.202.1
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.7345830Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261116.202/images/ubuntu/Ubuntu2604-Readme.md
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.7347569Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261116.202
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.7348694Z ##[endgroup]
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.7349914Z ##[group]GITHUB_TOKEN Permissions
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.7352436Z Contents: read
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.7353215Z Metadata: read
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.7353881Z ##[endgroup]
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.7356191Z Secret source: Actions
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.7357324Z Cache mode: write
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.7358331Z Prepare workflow directory
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.7805092Z Prepare all required actions
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.7855765Z Getting action download info
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:46.9941613Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:47.2129915Z Download action repository 'aws-actions/configure-aws-credentials@v4' (SHA:7474bc4690e29a8392af63c5b98e7449536d5c3a)
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:47.5074203Z Download action repository 'hashicorp/setup-terraform@v3' (SHA:b9cd54a3c349d3f38e8881555d616ced269862dd)
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:47.9122482Z Complete job name: apply-staging
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.0125203Z ##[group]Run actions/checkout@v4
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.0126236Z with:
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.0126771Z   repository: AparnaGopi/acs730
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.0131026Z   token: ***
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.0131718Z   ssh-strict: true
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.0132229Z   ssh-user: git
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.0132749Z   persist-credentials: true
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.0133309Z   clean: true
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.0133826Z   sparse-checkout-cone-mode: true
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.0134418Z   fetch-depth: 1
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.0134914Z   fetch-tags: false
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.0135443Z   show-progress: true
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.0135963Z   lfs: false
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.0136457Z   submodules: false
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.0136996Z   set-safe-directory: true
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.0137583Z   allow-unsafe-pr-checkout: false
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.0138446Z env:
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.0138937Z   TF_IN_AUTOMATION: true
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.0139550Z ##[endgroup]
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6048699Z Syncing repository: AparnaGopi/acs730
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6053476Z ##[group]Getting Git version info
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6055677Z Working directory is '/home/runner/work/acs730/acs730'
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6058925Z [command]/usr/bin/git version
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6061379Z git version 2.56.1
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6083349Z ##[endgroup]
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6102448Z Temporarily overriding HOME='/home/runner/work/_temp/22c48bc9-8c80-419b-8a00-cb17f018f758' before making global git config changes
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6107696Z Adding repository directory to the temporary git global config as a safe directory
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6112078Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/acs730/acs730
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6175779Z Deleting the contents of '/home/runner/work/acs730/acs730'
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6179983Z ##[group]Initializing the repository
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6184951Z [command]/usr/bin/git init /home/runner/work/acs730/acs730
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6586489Z hint: Using 'master' as the name for the initial branch. This default branch name
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6590508Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6595349Z hint: to use in all of your new repositories, which will suppress this warning,
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6599111Z hint: call:
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6601643Z hint:
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6604120Z hint: 	git config --global init.defaultBranch <name>
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6607071Z hint:
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6609854Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6616584Z hint: 'development'. The just-created branch can be renamed via this command:
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6620604Z hint:
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6623202Z hint: 	git branch -m <name>
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6625370Z hint:
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6627805Z hint: Disable this message with "git config set advice.defaultBranchName false"
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6630708Z Initialized empty Git repository in /home/runner/work/acs730/acs730/.git/
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6635284Z [command]/usr/bin/git remote add origin https://github.com/AparnaGopi/acs730
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6711349Z ##[endgroup]
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6714395Z ##[group]Disabling automatic garbage collection
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6716380Z [command]/usr/bin/git config --local gc.auto 0
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6768653Z ##[endgroup]
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6771585Z ##[group]Setting up auth
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6774468Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.6809748Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.7667284Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.7715863Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.8032674Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.8074376Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.8371438Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.8414495Z ##[endgroup]
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.8424009Z ##[group]Fetching the repository
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:48.8427737Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +a64a99d208e588b558260ded49f38e99b13fe53d:refs/remotes/origin/main
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:49.5061038Z From https://github.com/AparnaGopi/acs730
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:49.5064530Z  * [new ref]         a64a99d208e588b558260ded49f38e99b13fe53d -> origin/main
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:49.5073984Z ##[endgroup]
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:49.5076924Z ##[group]Determining the checkout info
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:49.5080434Z ##[endgroup]
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:49.5082789Z [command]/usr/bin/git sparse-checkout disable
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:49.5139809Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:49.5174671Z ##[group]Checking out the ref
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:49.5178750Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:49.5713954Z Switched to a new branch 'main'
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:49.5722063Z branch 'main' set up to track 'origin/main'.
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:49.5726883Z ##[endgroup]
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:49.5904973Z [command]/usr/bin/git log -1 --format=%H
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:49.5935068Z a64a99d208e588b558260ded49f38e99b13fe53d
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:49.6483322Z ##[group]Run aws-actions/configure-aws-credentials@v4
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:49.6485130Z with:
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:49.6486613Z   aws-access-key-id: ***
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:49.6488478Z   aws-secret-access-key: ***
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:49.6508251Z   aws-session-token: ***
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:49.6509642Z   aws-region: us-east-1
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:49.6510997Z   audience: sts.amazonaws.com
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:49.6512564Z   output-env-credentials: true
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:49.6513977Z env:
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:49.6515104Z   TF_IN_AUTOMATION: true
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:49.6516409Z ##[endgroup]
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:49.9829764Z Proceeding with IAM user credentials
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:50.0132310Z ##[group]Run hashicorp/setup-terraform@v3
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:50.0132770Z with:
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:50.0133035Z   terraform_version: 1.10.3
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:50.0133350Z   terraform_wrapper: false
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:50.0133695Z   cli_config_credentials_hostname: app.terraform.io
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:50.0134064Z env:
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:50.0134315Z   TF_IN_AUTOMATION: true
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:50.0134616Z   AWS_DEFAULT_REGION: us-east-1
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:50.0134929Z   AWS_REGION: us-east-1
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:50.0135391Z   AWS_ACCESS_KEY_ID: ***
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:50.0135811Z   AWS_SECRET_ACCESS_KEY: ***
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:50.0139420Z   AWS_SESSION_TOKEN: ***
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:50.0139718Z ##[endgroup]
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:50.1725202Z (node:2428) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:50.1727607Z (Use `node --trace-deprecation ...` to show where the warning was created)
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:50.4666353Z [command]/usr/bin/unzip -o -q /home/runner/work/_temp/1b3d84ca-5ada-47e5-bb6a-3be036e2bab0
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:51.0885025Z ##[group]Run terraform init -input=false
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:51.0885452Z ^[[36;1mterraform init -input=false^[[0m
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:51.0924063Z shell: /usr/bin/bash -e {0}
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:51.0924345Z env:
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:51.0924550Z   TF_IN_AUTOMATION: true
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:51.0924825Z   AWS_DEFAULT_REGION: us-east-1
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:51.0925095Z   AWS_REGION: us-east-1
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:51.0925452Z   AWS_ACCESS_KEY_ID: ***
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:51.0925828Z   AWS_SECRET_ACCESS_KEY: ***
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:51.0929310Z   AWS_SESSION_TOKEN: ***
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:51.0929540Z ##[endgroup]
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:51.1301899Z ^[[0m^[[1mInitializing the backend...^[[0m
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:51.3954204Z ^[[0m^[[32m
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:51.3954847Z Successfully configured the backend "s3"! Terraform will automatically
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:51.3955527Z use this backend unless the backend configuration changes.^[[0m
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:51.5456150Z ^[[0m^[[1mInitializing modules...^[[0m
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:51.5479040Z - web in ../modules/web
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:51.5489120Z ^[[0m^[[1mInitializing provider plugins...^[[0m
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:51.5489943Z - Reusing previous version of hashicorp/aws from the dependency lock file
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:51.7036740Z - Installing hashicorp/aws v5.100.0...
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:58.7302101Z - Installed hashicorp/aws v5.100.0 (signed by HashiCorp)
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:58.7302491Z 
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:58.7302998Z ^[[0m^[[1m^[[32mTerraform has been successfully initialized!^[[0m^[[32m^[[0m
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:58.7363880Z ##[group]Run terraform apply -input=false -auto-approve
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:58.7364367Z ^[[36;1mterraform apply -input=false -auto-approve^[[0m
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:58.7397505Z shell: /usr/bin/bash -e {0}
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:58.7397781Z env:
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:58.7397992Z   TF_IN_AUTOMATION: true
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:58.7398294Z   AWS_DEFAULT_REGION: us-east-1
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:58.7398562Z   AWS_REGION: us-east-1
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:58.7399147Z   AWS_ACCESS_KEY_ID: ***
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:58.7399523Z   AWS_SECRET_ACCESS_KEY: ***
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:58.7403268Z   AWS_SESSION_TOKEN: ***
+apply-staging	UNKNOWN STEP	2026-11-27T04:56:58.7403529Z ##[endgroup]
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:01.7999913Z ^[[0m^[[1mmodule.web.data.aws_ssm_parameter.db_password: Reading...^[[0m^[[0m
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:01.8001701Z ^[[0m^[[1mmodule.web.data.aws_ami.al2023: Reading...^[[0m^[[0m
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:01.8012323Z ^[[0m^[[1mmodule.web.data.aws_availability_zones.available: Reading...^[[0m^[[0m
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:01.8014327Z ^[[0m^[[1mmodule.web.aws_vpc.main: Refreshing state... [id=vpc-099472bf54dea90a0]^[[0m
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:01.9747558Z ^[[0m^[[1mmodule.web.data.aws_ssm_parameter.db_password: Read complete after 0s [id=/acs730/assignment1/staging/db_password]^[[0m
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:01.9883834Z ^[[0m^[[1mmodule.web.data.aws_availability_zones.available: Read complete after 0s [id=us-east-1]^[[0m
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:02.3581538Z ^[[0m^[[1mmodule.web.data.aws_ami.al2023: Read complete after 0s [id=ami-062caee4b7b602eb0]^[[0m
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:02.4945823Z ^[[0m^[[1mmodule.web.aws_internet_gateway.main: Refreshing state... [id=igw-0c8016b671346c2da]^[[0m
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:02.4974200Z ^[[0m^[[1mmodule.web.aws_subnet.public["a"]: Refreshing state... [id=subnet-063e3b18bdcd39e13]^[[0m
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:02.5706906Z ^[[0m^[[1mmodule.web.aws_subnet.public["b"]: Refreshing state... [id=subnet-0c0184bdcf3eb9369]^[[0m
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:02.5708106Z ^[[0m^[[1mmodule.web.aws_security_group.web: Refreshing state... [id=sg-05bafe658289f619a]^[[0m
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:02.5709065Z ^[[0m^[[1mmodule.web.aws_route_table.public: Refreshing state... [id=rtb-00eb9d0aa4621bf30]^[[0m
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:02.6806484Z ^[[0m^[[1mmodule.web.aws_route_table_association.public["a"]: Refreshing state... [id=rtbassoc-063cb0645ea6abaf9]^[[0m
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:02.6808078Z ^[[0m^[[1mmodule.web.aws_route_table_association.public["b"]: Refreshing state... [id=rtbassoc-0cb24c18b1b3f7830]^[[0m
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:02.7715913Z ^[[0m^[[1mmodule.web.aws_instance.web: Refreshing state... [id=i-09c74fa286b30d405]^[[0m
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:04.4552880Z ^[[0m^[[1mmodule.web.aws_cloudwatch_metric_alarm.cpu_high: Refreshing state... [id=acs730-a1-aparna-staging-cpu-high]^[[0m
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:04.8310931Z 
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:04.8311823Z Terraform used the selected providers to generate the following execution
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:04.8312717Z plan. Resource actions are indicated with the following symbols:
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:04.8313627Z   ^[[33m~^[[0m update in-place^[[0m
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:04.8313943Z 
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:04.8314160Z Terraform will perform the following actions:
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:04.8314584Z 
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:04.8315151Z ^[[1m  # module.web.aws_cloudwatch_metric_alarm.cpu_high^[[0m will be updated in-place
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:04.8316145Z ^[[0m  ^[[33m~^[[0m^[[0m resource "aws_cloudwatch_metric_alarm" "cpu_high" {
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:04.8316872Z         id                                    = "acs730-a1-aparna-staging-cpu-high"
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:04.8317494Z         tags                                  = {
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:04.8318015Z             "Environment" = "staging"
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:04.8318488Z             "Managed"     = "terraform"
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:04.8318930Z         }
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:04.8319559Z       ^[[33m~^[[0m^[[0m threshold                             = 80 ^[[33m->^[[0m^[[0m 70
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:04.8320330Z         ^[[90m# (21 unchanged attributes hidden)^[[0m^[[0m
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:04.8320837Z     }
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:04.8321041Z 
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:04.8321556Z ^[[1mPlan:^[[0m 0 to add, 1 to change, 0 to destroy.
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:05.2532453Z ^[[0m^[[0m^[[1mmodule.web.aws_cloudwatch_metric_alarm.cpu_high: Modifying... [id=acs730-a1-aparna-staging-cpu-high]^[[0m^[[0m
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:05.5423532Z ^[[0m^[[1mmodule.web.aws_cloudwatch_metric_alarm.cpu_high: Modifications complete after 1s [id=acs730-a1-aparna-staging-cpu-high]^[[0m
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:05.7026856Z ^[[0m^[[1m^[[32m
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:05.7027619Z Apply complete! Resources: 0 added, 1 changed, 0 destroyed.
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:05.7028234Z ^[[0m^[[0m^[[1m^[[32m
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:05.7028526Z Outputs:
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:05.7028676Z 
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:05.7028876Z ^[[0minstance_id = "i-09c74fa286b30d405"
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:05.7029321Z web_url = "http://3.235.247.229/"
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:05.7271709Z Post job cleanup.
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:05.8548920Z Post job cleanup.
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:05.9480651Z [command]/usr/bin/git version
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:05.9529544Z git version 2.56.1
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:05.9575011Z Temporarily overriding HOME='/home/runner/work/_temp/019b91d5-f396-4558-abe6-5ff64fb5875a' before making global git config changes
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:05.9576333Z Adding repository directory to the temporary git global config as a safe directory
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:05.9580742Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/acs730/acs730
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:05.9625909Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:05.9665339Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:05.9995674Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:06.0032126Z http.https://github.com/.extraheader
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:06.0034811Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:06.0072541Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:06.0402074Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:06.0443420Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:06.0868776Z Cleaning up orphan processes
+apply-staging	UNKNOWN STEP	2026-11-27T04:57:06.1263204Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, aws-actions/configure-aws-credentials@v4, hashicorp/setup-terraform@v3. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+apply-prod	UNKNOWN STEP	﻿2026-11-27T04:57:33.1586817Z Current runner version: '2.338.2'
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.1610773Z ##[group]Runner Image Provisioner
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.1611739Z Hosted Compute Agent
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.1612390Z Version: 20261111.635
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.1613094Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.1613969Z Build Date: 2026-11-11T01:49:01Z
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.1614676Z Worker ID: {07cf432d-1ccd-4492-9a5a-e4d2e0f6157e}
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.1615432Z Region: westus2
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.1616238Z Cloud: Azure
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.1617155Z ##[endgroup]
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.1619135Z ##[group]Operating System
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.1619859Z Ubuntu
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.1620489Z 26.04.1
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.1621024Z LTS
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.1621617Z ##[endgroup]
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.1622244Z ##[group]Runner Image
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.1622878Z Image: ubuntu-26.04
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.1623557Z Version: 20261122.9.1
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.1624852Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261122.9/images/ubuntu/Ubuntu2604-Readme.md
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.1626920Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261122.9
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.1627919Z ##[endgroup]
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.1629254Z ##[group]GITHUB_TOKEN Permissions
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.1631515Z Contents: read
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.1632174Z Metadata: read
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.1632746Z ##[endgroup]
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.1634945Z Secret source: Actions
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.1636266Z Cache mode: write
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.1637206Z Prepare workflow directory
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.2057265Z Prepare all required actions
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.2104900Z Getting action download info
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.5363441Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.6268428Z Download action repository 'aws-actions/configure-aws-credentials@v4' (SHA:7474bc4690e29a8392af63c5b98e7449536d5c3a)
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:33.8104699Z Download action repository 'hashicorp/setup-terraform@v3' (SHA:b9cd54a3c349d3f38e8881555d616ced269862dd)
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.0804712Z Complete job name: apply-prod
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.1681730Z ##[group]Run actions/checkout@v4
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.1682623Z with:
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.1683091Z   repository: AparnaGopi/acs730
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.1687067Z   token: ***
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.1687521Z   ssh-strict: true
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.1687987Z   ssh-user: git
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.1688451Z   persist-credentials: true
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.1688956Z   clean: true
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.1689422Z   sparse-checkout-cone-mode: true
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.1689973Z   fetch-depth: 1
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.1690424Z   fetch-tags: false
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.1690886Z   show-progress: true
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.1691358Z   lfs: false
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.1691790Z   submodules: false
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.1692263Z   set-safe-directory: true
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.1692787Z   allow-unsafe-pr-checkout: false
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.1693635Z env:
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.1694078Z   TF_IN_AUTOMATION: true
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.1694580Z ##[endgroup]
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.4723105Z Syncing repository: AparnaGopi/acs730
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.4725053Z ##[group]Getting Git version info
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.4726136Z Working directory is '/home/runner/work/acs730/acs730'
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.4727371Z [command]/usr/bin/git version
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.4778434Z git version 2.56.1
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.4809226Z ##[endgroup]
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.4823734Z Temporarily overriding HOME='/home/runner/work/_temp/b7d8562c-2add-47e9-9d9f-f19a33531a1b' before making global git config changes
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.4827063Z Adding repository directory to the temporary git global config as a safe directory
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.4830888Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/acs730/acs730
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.4909214Z Deleting the contents of '/home/runner/work/acs730/acs730'
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.4916447Z ##[group]Initializing the repository
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.4917482Z [command]/usr/bin/git init /home/runner/work/acs730/acs730
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.5075754Z hint: Using 'master' as the name for the initial branch. This default branch name
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.5078150Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.5079682Z hint: to use in all of your new repositories, which will suppress this warning,
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.5081193Z hint: call:
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.5082035Z hint:
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.5082828Z hint: 	git config --global init.defaultBranch <name>
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.5083623Z hint:
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.5084716Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.5086516Z hint: 'development'. The just-created branch can be renamed via this command:
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.5087870Z hint:
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.5088603Z hint: 	git branch -m <name>
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.5089131Z hint:
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.5089794Z hint: Disable this message with "git config set advice.defaultBranchName false"
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.5091359Z Initialized empty Git repository in /home/runner/work/acs730/acs730/.git/
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.5118341Z [command]/usr/bin/git remote add origin https://github.com/AparnaGopi/acs730
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.5188523Z ##[endgroup]
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.5189488Z ##[group]Disabling automatic garbage collection
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.5191849Z [command]/usr/bin/git config --local gc.auto 0
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.5231680Z ##[endgroup]
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.5233097Z ##[group]Setting up auth
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.5241185Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.5298150Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.5851854Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.5886599Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.6159330Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.6195328Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.6463810Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.6503806Z ##[endgroup]
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.6505333Z ##[group]Fetching the repository
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:34.6515074Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +a64a99d208e588b558260ded49f38e99b13fe53d:refs/remotes/origin/main
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.2400916Z From https://github.com/AparnaGopi/acs730
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.2402145Z  * [new ref]         a64a99d208e588b558260ded49f38e99b13fe53d -> origin/main
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.2419155Z ##[endgroup]
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.2429828Z ##[group]Determining the checkout info
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.2431676Z ##[endgroup]
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.2432775Z [command]/usr/bin/git sparse-checkout disable
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.2481951Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.2515803Z ##[group]Checking out the ref
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.2521377Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.2857276Z Switched to a new branch 'main'
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.2861299Z branch 'main' set up to track 'origin/main'.
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.2870026Z ##[endgroup]
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.2919140Z [command]/usr/bin/git log -1 --format=%H
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.2944447Z a64a99d208e588b558260ded49f38e99b13fe53d
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.3447652Z ##[group]Run aws-actions/configure-aws-credentials@v4
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.3449208Z with:
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.3450718Z   aws-access-key-id: ***
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.3452353Z   aws-secret-access-key: ***
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.3468814Z   aws-session-token: ***
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.3469982Z   aws-region: us-east-1
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.3471101Z   audience: sts.amazonaws.com
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.3472328Z   output-env-credentials: true
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.3473563Z env:
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.3474489Z   TF_IN_AUTOMATION: true
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.3475568Z ##[endgroup]
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.7377407Z Proceeding with IAM user credentials
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.7525182Z ##[group]Run hashicorp/setup-terraform@v3
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.7525569Z with:
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.7525827Z   terraform_version: 1.10.3
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.7526551Z   terraform_wrapper: false
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.7526924Z   cli_config_credentials_hostname: app.terraform.io
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.7527278Z env:
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.7527522Z   TF_IN_AUTOMATION: true
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.7527816Z   AWS_DEFAULT_REGION: us-east-1
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.7528125Z   AWS_REGION: us-east-1
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.7528569Z   AWS_ACCESS_KEY_ID: ***
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.7528976Z   AWS_SECRET_ACCESS_KEY: ***
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.7532593Z   AWS_SESSION_TOKEN: ***
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.7532873Z ##[endgroup]
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.8920382Z (node:2899) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:35.8921940Z (Use `node --trace-deprecation ...` to show where the warning was created)
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:36.2170953Z [command]/usr/bin/unzip -o -q /home/runner/work/_temp/cdb630d1-254e-4d8b-be9d-38c61cc999e7
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:36.8045245Z ##[group]Run terraform init -input=false
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:36.8045695Z ^[[36;1mterraform init -input=false^[[0m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:36.8084814Z shell: /usr/bin/bash -e {0}
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:36.8085105Z env:
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:36.8085312Z   TF_IN_AUTOMATION: true
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:36.8085572Z   AWS_DEFAULT_REGION: us-east-1
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:36.8085838Z   AWS_REGION: us-east-1
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:36.8086484Z   AWS_ACCESS_KEY_ID: ***
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:36.8086859Z   AWS_SECRET_ACCESS_KEY: ***
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:36.8090379Z   AWS_SESSION_TOKEN: ***
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:36.8090620Z ##[endgroup]
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:36.8787714Z ^[[0m^[[1mInitializing the backend...^[[0m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:37.4753264Z ^[[0m^[[32m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:37.4753976Z Successfully configured the backend "s3"! Terraform will automatically
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:37.4755180Z use this backend unless the backend configuration changes.^[[0m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:37.7919553Z ^[[0m^[[1mInitializing modules...^[[0m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:37.7940112Z - web in ../modules/web
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:37.7950691Z ^[[0m^[[1mInitializing provider plugins...^[[0m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:37.7951629Z - Reusing previous version of hashicorp/aws from the dependency lock file
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:38.0799834Z - Installing hashicorp/aws v5.100.0...
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:44.8478190Z - Installed hashicorp/aws v5.100.0 (signed by HashiCorp)
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:44.8478817Z 
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:44.8487757Z ^[[0m^[[1m^[[32mTerraform has been successfully initialized!^[[0m^[[32m^[[0m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:44.8542115Z ##[group]Run terraform apply -input=false -auto-approve
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:44.8542567Z ^[[36;1mterraform apply -input=false -auto-approve^[[0m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:44.8575470Z shell: /usr/bin/bash -e {0}
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:44.8575741Z env:
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:44.8576134Z   TF_IN_AUTOMATION: true
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:44.8576416Z   AWS_DEFAULT_REGION: us-east-1
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:44.8576671Z   AWS_REGION: us-east-1
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:44.8577038Z   AWS_ACCESS_KEY_ID: ***
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:44.8577383Z   AWS_SECRET_ACCESS_KEY: ***
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:44.8581316Z   AWS_SESSION_TOKEN: ***
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:44.8581561Z ##[endgroup]
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:48.7360495Z ^[[0m^[[1mmodule.web.data.aws_availability_zones.available: Reading...^[[0m^[[0m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:48.7388276Z ^[[0m^[[1mmodule.web.data.aws_ami.al2023: Reading...^[[0m^[[0m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:48.7417002Z ^[[0m^[[1mmodule.web.data.aws_ssm_parameter.db_password: Reading...^[[0m^[[0m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:48.7446777Z ^[[0m^[[1mmodule.web.aws_vpc.main: Refreshing state... [id=vpc-0da0e07a193d6c2c4]^[[0m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:49.0763128Z ^[[0m^[[1mmodule.web.data.aws_ssm_parameter.db_password: Read complete after 0s [id=/acs730/assignment1/prod/db_password]^[[0m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:49.2568455Z ^[[0m^[[1mmodule.web.data.aws_availability_zones.available: Read complete after 0s [id=us-east-1]^[[0m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:49.4356241Z ^[[0m^[[1mmodule.web.data.aws_ami.al2023: Read complete after 0s [id=ami-062caee4b7b602eb0]^[[0m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:49.9647748Z ^[[0m^[[1mmodule.web.aws_internet_gateway.main: Refreshing state... [id=igw-08106e762d669b51c]^[[0m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:49.9654121Z ^[[0m^[[1mmodule.web.aws_subnet.public["a"]: Refreshing state... [id=subnet-0f0b12744563888eb]^[[0m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:49.9656099Z ^[[0m^[[1mmodule.web.aws_subnet.public["b"]: Refreshing state... [id=subnet-0add242e3f4669e92]^[[0m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:49.9657675Z ^[[0m^[[1mmodule.web.aws_security_group.web: Refreshing state... [id=sg-0ce138ef88b051221]^[[0m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:50.1010353Z ^[[0m^[[1mmodule.web.aws_route_table.public: Refreshing state... [id=rtb-0c8775619cbe004ce]^[[0m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:50.3366998Z ^[[0m^[[1mmodule.web.aws_route_table_association.public["b"]: Refreshing state... [id=rtbassoc-06cf60ea25d5e3927]^[[0m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:50.3368895Z ^[[0m^[[1mmodule.web.aws_route_table_association.public["a"]: Refreshing state... [id=rtbassoc-070bb4450ef17cd8b]^[[0m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:50.4805623Z ^[[0m^[[1mmodule.web.aws_instance.web: Refreshing state... [id=i-041724638e58e94f3]^[[0m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:52.6852692Z ^[[0m^[[1mmodule.web.aws_cloudwatch_metric_alarm.cpu_high: Refreshing state... [id=acs730-a1-aparna-prod-cpu-high]^[[0m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:53.2737840Z 
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:53.2738617Z Terraform used the selected providers to generate the following execution
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:53.2739593Z plan. Resource actions are indicated with the following symbols:
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:53.2740298Z   ^[[33m~^[[0m update in-place^[[0m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:53.2740517Z 
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:53.2740673Z Terraform will perform the following actions:
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:53.2740958Z 
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:53.2741385Z ^[[1m  # module.web.aws_cloudwatch_metric_alarm.cpu_high^[[0m will be updated in-place
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:53.2742096Z ^[[0m  ^[[33m~^[[0m^[[0m resource "aws_cloudwatch_metric_alarm" "cpu_high" {
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:53.2742630Z         id                                    = "acs730-a1-aparna-prod-cpu-high"
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:53.2743078Z         tags                                  = {
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:53.2743433Z             "Environment" = "prod"
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:53.2743771Z             "Managed"     = "terraform"
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:53.2744116Z         }
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:53.2744577Z       ^[[33m~^[[0m^[[0m threshold                             = 80 ^[[33m->^[[0m^[[0m 75
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:53.2745134Z         ^[[90m# (21 unchanged attributes hidden)^[[0m^[[0m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:53.2745513Z     }
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:53.2745647Z 
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:53.2746093Z ^[[1mPlan:^[[0m 0 to add, 1 to change, 0 to destroy.
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:53.8416460Z ^[[0m^[[0m^[[1mmodule.web.aws_cloudwatch_metric_alarm.cpu_high: Modifying... [id=acs730-a1-aparna-prod-cpu-high]^[[0m^[[0m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:54.3648979Z ^[[0m^[[1mmodule.web.aws_cloudwatch_metric_alarm.cpu_high: Modifications complete after 0s [id=acs730-a1-aparna-prod-cpu-high]^[[0m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:54.9146754Z ^[[0m^[[1m^[[32m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:54.9147478Z Apply complete! Resources: 0 added, 1 changed, 0 destroyed.
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:54.9148161Z ^[[0m^[[0m^[[1m^[[32m
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:54.9148440Z Outputs:
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:54.9148584Z 
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:54.9148773Z ^[[0minstance_id = "i-041724638e58e94f3"
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:54.9149186Z web_url = "http://98.80.183.156/"
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:54.9373467Z Post job cleanup.
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:55.0630019Z Post job cleanup.
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:55.1526362Z [command]/usr/bin/git version
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:55.1571095Z git version 2.56.1
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:55.1617387Z Temporarily overriding HOME='/home/runner/work/_temp/a461bf25-d1a9-42ff-90d5-9079c4bd423b' before making global git config changes
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:55.1619206Z Adding repository directory to the temporary git global config as a safe directory
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:55.1622581Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/acs730/acs730
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:55.1664060Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:55.1701729Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:55.2012230Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:55.2039711Z http.https://github.com/.extraheader
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:55.2052064Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:55.2095228Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:55.2432005Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:55.2482941Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:55.2899458Z Cleaning up orphan processes
+apply-prod	UNKNOWN STEP	2026-11-27T04:57:55.3287388Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, aws-actions/configure-aws-credentials@v4, hashicorp/setup-terraform@v3. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
